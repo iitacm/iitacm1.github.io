@@ -1,25 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ACM @ Illinois Tech</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <style>
 
         body {
-            background-color: red;
+            background: 
+            linear-gradient(to right, #73168f, #5d791d),
+            linear-gradient(to bottom, #ad2424, #130000);
 
+            background-blend-mode: overlay;
         }
 
-        h1 {
-            text-align: center;
-            color:white;
+        .acmlogo img{
+            width: 100px;
+            float: right;
         }
 
-        h3{
+        .headertext h1 {
             text-align: center;
             color:white;
+            font-family: 'Inter', sans-serif;
+            font-weight: lighter;
+        }
+
+        .bottomtext h3 {
+            text-align: center;
+            color:white;
+            font-family: 'Inter', sans-serif;
+            font-weight: lighter;
+        }
+
+        .poster img {
+            width: 400px;
+            height: auto;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .footer img {
+            width: 60px;
+            height: auto;
+        }
+
+        .footer-icon-container{
+            display: flex;
+            justify-content: center;
+            gap: 80px; /* space between the icons */
+            margin-top: 1%;
+            margin-bottom: 3%;
         }
 
     </style>
@@ -27,13 +60,42 @@
 </head>
 <body>
 
-    <h1>Association for Computing Machinery</h1>
-    <h1>@ Illinois Institute of Technology</h1>
+    <div class="acmlogo">
+        <img src="acmcornerlogo.png" alt="ACM @ Illinois Tech">
+    </div>
 
-    <img src="week829poster.png" alt="Upcoming Event!">
+    <br><br><br><br>
+    <!-- Header Text Section -->
+    <div class="headertext">
+        <h1>Association for Computing Machinery</h1>
+        <h1>@ Illinois Institute of Technology</h1>
+    </div>
 
-    <h3>Stay up to date for events and news updates!</h3>
-    <p>test</p>
+    <br>
+    
+    <!-- Poster Section -->
+    <div class="poster">
+        <img src="painttheduckposter.png" alt="Upcoming Event!">
+    </div>
+    
+
+    <br>
+
+    <!-- Bottom Text Section -->
+    <div class="bottomtext">
+        <h3>Stay up to date for events and news updates!</h3>
+    </div>
+    
+    <br>
+
+    <!-- Footer Section -->
+    <div class="footer">
+        <div class="footer-icon-container">
+            <a href="https://www.instagram.com/acm_iit/"><img src="instaLogo.png" alt="Instagram"></a>
+            <a href="https://discord.gg/KfUmzguuda"><img src="discordLogo.png" alt="Discord"></a>
+            <a href="https://www.linkedin.com/company/acm-iit/"><img src="linkedInLogo.png" alt="LinkedIn"></a>
+        </div>
+    </div>
     
 </body>
 </html>
