@@ -26,7 +26,7 @@ body {
 }
 
 .poster img {
-    width: 400px;
+    width: 500px;
     height: auto;
     display: block;
     margin-left: auto;
@@ -55,7 +55,7 @@ body {
 }
 
 .button {
-    background-color: black;
+    background-color: rgb(165, 5, 5);
     border: none;
     color: white;
     padding: 15px 32px;
