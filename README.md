@@ -1,2 +1,2 @@
 # acmillinoistech.github.io
-Hello! Welcome to our temporary webpage for ACM @ Illinois Tech
+The Website of ACM Illinois Tech
