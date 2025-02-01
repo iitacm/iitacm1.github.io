@@ -14,8 +14,14 @@ export default {
 			'bree-serif': ['var(--font-bree-serif)']
 		},
   		colors: {
-  			background: 'hsl(var(--background))',
-  			foreground: 'hsl(var(--foreground))',
+			fontcolor: 'var(--font-color)',
+  			background: 'var(--background-color)',
+			'accent-color': {
+				primary: 'var(--accent-color)',
+				secondary: 'var(--accent-color-2)',
+			},
+			'light-red': 'var(--light-red)',
+			gray: 'var(--gray)',
   			card: {
   				DEFAULT: 'hsl(var(--card))',
   				foreground: 'hsl(var(--card-foreground))'
@@ -24,21 +30,9 @@ export default {
   				DEFAULT: 'hsl(var(--popover))',
   				foreground: 'hsl(var(--popover-foreground))'
   			},
-  			primary: {
-  				DEFAULT: 'hsl(var(--primary))',
-  				foreground: 'hsl(var(--primary-foreground))'
-  			},
-  			secondary: {
-  				DEFAULT: 'hsl(var(--secondary))',
-  				foreground: 'hsl(var(--secondary-foreground))'
-  			},
   			muted: {
   				DEFAULT: 'hsl(var(--muted))',
   				foreground: 'hsl(var(--muted-foreground))'
-  			},
-  			accent: {
-  				DEFAULT: 'hsl(var(--accent))',
-  				foreground: 'hsl(var(--accent-foreground))'
   			},
   			destructive: {
   				DEFAULT: 'hsl(var(--destructive))',
