@@ -1,7 +1,9 @@
 import React from "react";
 import { NavigationBar } from "@/components/ui/navigation-bar";
+import { CarouselPlugin } from "@/components/ui/home-carousel";
 import Image from "next/image";
 import Link from "next/link";
+import { Button } from "@/components/ui/button";
 
 const Home = () => {
   return (
@@ -23,7 +25,7 @@ const Home = () => {
       </header>
 
 
-      <main className="flex-1">
+      <main className="flex-1 flex flex-col items-center">
         {/* Events Section */}
         <section className="flex flex-col items-center lg:flex-row lg:items-start justify-between lg:h-[500px] p-8 lg:p-24 gap-4">
           <Image className="rounded-md" alt="ACM IIT Picture" src={`/assets/acm_pictures/1.jpeg`} width={450} height={450} />
@@ -35,14 +37,45 @@ const Home = () => {
               From hands-on workshops and insightful tech talks to networking sessions and hackathons, we provide opportunities for students to learn, innovate, and connect with industry leaders. 
               Don&apos;t miss out on these chances to grow and excel in your computing journey.
             </p>
-            <Link className="flex items-center justify-center gap-2 size-max p-2 bg-light-red text-background mt-4" href="/events">
+            <Link href="/events">
+              <Button variant="default" className="mt-4">
               ACM IIT EVENTS 
-              <svg width="36" height="20" viewBox="0 0 49 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M2 12H47M47 12L36.6154 2M47 12L36.6154 22" stroke="#FFF5F5" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
-              </svg>
+                <svg width="36" height="20" viewBox="0 0 49 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2 12H47M47 12L36.6154 2M47 12L36.6154 22" stroke="#FFF5F5" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
+                </svg>
+              </Button>
             </Link>
           </div>
         </section>
+
+        {/* About Us */}
+        <section className="flex flex-col items-center lg:flex-row lg:items-start justify-between lg:h-[500px] p-8 lg:p-24 gap-4">
+          <div className="w-full flex flex-col items-center mt-4 lg:w-1/2 lg:mt-0 lg:h-full">
+            <h2 className="text-lg text-center text-accent-color-primary">ABOUT US</h2>
+            <p className="font-raleway text-sm mt-2 flex-1">
+              ACM IIT is the premier student chapter dedicated to advancing computing knowledge, fostering innovation, 
+              and building a thriving community of tech enthusiasts at Illinois Institute of Technology. We strive to inspire, educate, and connect
+              students through workshops, events, and collaborative opportunities, empowering them to excel in the ever-evolving world of technology.
+            </p>
+          </div>
+          
+          <div className="w-full flex flex-col items-center mt-4 lg:w-1/2 lg:mt-0 lg:h-full">
+            <CarouselPlugin />
+          </div>
+        </section>
+
+        {/* Gallery Section */}
+        {/* <section className="flex flex-col items-center lg:flex-row lg:items-start justify-between lg:h-[500px] p-8 lg:p-24 gap-4">
+        <div className="w-full flex flex-col items-center mt-4 lg:w-1/2 lg:mt-0 lg:h-full">
+            <h2 className="text-lg text-center text-accent-color-primary">ABOUT US</h2>
+            <p className="font-raleway text-sm mt-2 flex-1">
+              ACM IIT is the premier student chapter dedicated to advancing computing knowledge, fostering innovation, 
+              and building a thriving community of tech enthusiasts at Illinois Institute of Technology. We strive to inspire, educate, and connect
+              students through workshops, events, and collaborative opportunities, empowering them to excel in the ever-evolving world of technology.
+            </p>
+          </div>
+          <Image className="rounded-md" alt="ACM IIT Picture" src={`/assets/acm_pictures/1.jpeg`} width={450} height={450} />
+        </section> */}
       </main>
     </div>
   );

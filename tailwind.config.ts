@@ -9,19 +9,23 @@ export default {
   ],
   theme: {
   	extend: {
-		fontFamily: {
-			raleway: ['var(--font-raleway)'],
-			'bree-serif': ['var(--font-bree-serif)']
-		},
+  		fontFamily: {
+  			raleway: [
+  				'var(--font-raleway)'
+  			],
+  			'bree-serif': [
+  				'var(--font-bree-serif)'
+  			]
+  		},
   		colors: {
-			fontcolor: 'var(--font-color)',
-  			background: 'var(--background-color)',
-			'accent-color': {
-				primary: 'var(--accent-color)',
-				secondary: 'var(--accent-color-2)',
-			},
-			'light-red': 'var(--light-red)',
-			gray: 'var(--gray)',
+  			fontcolor: 'var(--font-color)',
+  			background: 'hsl(var(--background))',
+  			'accent-color': {
+  				primary: 'var(--accent-color)',
+  				secondary: 'var(--accent-color-2)'
+  			},
+  			'light-red': 'var(--light-red)',
+  			gray: 'var(--gray)',
   			card: {
   				DEFAULT: 'hsl(var(--card))',
   				foreground: 'hsl(var(--card-foreground))'
@@ -47,6 +51,19 @@ export default {
   				'3': 'hsl(var(--chart-3))',
   				'4': 'hsl(var(--chart-4))',
   				'5': 'hsl(var(--chart-5))'
+  			},
+  			foreground: 'hsl(var(--foreground))',
+  			primary: {
+  				DEFAULT: 'hsl(var(--primary))',
+  				foreground: 'hsl(var(--primary-foreground))'
+  			},
+  			secondary: {
+  				DEFAULT: 'hsl(var(--secondary))',
+  				foreground: 'hsl(var(--secondary-foreground))'
+  			},
+  			accent: {
+  				DEFAULT: 'hsl(var(--accent))',
+  				foreground: 'hsl(var(--accent-foreground))'
   			}
   		},
   		borderRadius: {
