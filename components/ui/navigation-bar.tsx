@@ -18,7 +18,7 @@ export const NavigationBar = () => {
     ];
 
     return (
-        <nav className="w-full fixed top-0 left-0 px-8 lg:px-24 h-24 bg-background flex justify-center items-center">
+        <nav className="z-10 w-full fixed top-0 left-0 px-8 lg:px-24 h-24 bg-background flex justify-center items-center">
             <div className="flex justify-between items-center w-full">
                 <div className="flex items-center space-x-4">
                     <Image src="/assets/acm_iit_logo.png" alt="Logo" width={70} height={80} />

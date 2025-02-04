@@ -7,7 +7,12 @@ import { Button } from "@/components/ui/button";
 
 const Home = () => {
   return (
-    <div className="flex flex-col min-h-screen">
+    <div className="relative flex flex-col min-h-screen overflow-hidden">
+      {/* Top left Blurred Circle */}
+      <div className="absolute top-[-100px] left-[-100px] w-80 h-80 bg-light-red rounded-full blur-[80px] opacity-30"></div>
+      {/* Mid left Blurred Circle */}
+      <div className="absolute top-[600px] left-[-150px] w-80 h-80 bg-light-red rounded-full blur-[80px] opacity-30"></div>
+
       <NavigationBar />
       <header className="mt-24 px-8 text-background bg-[url('/assets/header_background_1.png')] bg-cover flex flex-col space-y-4 justify-center items-center w-full h-96 lg:px-24 lg:flex-row lg:h-screen lg:space-x-4 lg:space-y-0">
         <div className="w-full lg:w-1/3 lg:flex-1">
