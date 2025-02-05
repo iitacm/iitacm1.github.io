@@ -5,20 +5,19 @@ import Image from "next/image";
 
 export const Gallery = () => {
     const images = [
-        '/assets/acm_pictures/12.jfif',
-        '/assets/acm_pictures/10.jfif',
-        '/assets/acm_pictures/16.jfif',
-        '/assets/acm_pictures/8.jfif',
-        '/assets/acm_pictures/7.jfif',
-        '/assets/acm_pictures/5.jfif',
-        '/assets/acm_pictures/17.jfif',
-        '/assets/acm_pictures/6.jfif',
-        '/assets/acm_pictures/14.jfif',
-        '/assets/acm_pictures/19.jfif',
+        '/assets/acm_pictures/12.png',
+        '/assets/acm_pictures/10.png',
+        '/assets/acm_pictures/16.png',
+        '/assets/acm_pictures/8.png',
+        '/assets/acm_pictures/7.png',
+        '/assets/acm_pictures/5.png',
+        '/assets/acm_pictures/17.png',
+        '/assets/acm_pictures/6.png',
+        '/assets/acm_pictures/14.png',
+        '/assets/acm_pictures/19.png',
     ];
 
     const ref = useRef(null);
-    // const isInView = useInView(ref, { once: false, amount: 0.3 });
 
     return (
         <div className="relative w-full overflow-hidden">
