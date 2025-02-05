@@ -12,7 +12,7 @@ export const NavigationBar = () => {
         { href: "/events", label: "Events" },
         { href: "/merch", label: "Merch" },
         { href: "/contact", label: "Contact" },
-        { href: "/scarlethacks", label: "ScarletHacks" },
+        { href: "https://www.scarlethacks.com", label: "ScarletHacks" },
         { href: "/sigs", label: "SIGs" },
         { href: "/get-involved", label: "Get Involved" }
     ];

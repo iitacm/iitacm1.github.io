@@ -70,17 +70,18 @@ const Home = () => {
         </section>
 
         {/* Gallery Section */}
-        {/* <section className="flex flex-col items-center lg:flex-row lg:items-start justify-between lg:h-[500px] p-8 lg:p-24 gap-4">
-        <div className="w-full flex flex-col items-center mt-4 lg:w-1/2 lg:mt-0 lg:h-full">
+
+        <section className="relative flex flex-col items-center lg:flex-row lg:items-start justify-between lg:h-[500px] p-8 lg:p-24 gap-4">
+          <Image className="absolute top-[-50px] left-1/2 tranform -translate-x-1/2 max-w-full" src={`/assets/acm_pictures/little_stars.png`} height={195} width={1000} alt="ACM's Little Stars" />
+          {/* <div className="w-full flex flex-col items-center mt-4 lg:w-1/2 lg:mt-0 lg:h-full">
             <h2 className="text-lg text-center text-accent-color-primary">ABOUT US</h2>
             <p className="font-raleway text-sm mt-2 flex-1">
               ACM IIT is the premier student chapter dedicated to advancing computing knowledge, fostering innovation, 
               and building a thriving community of tech enthusiasts at Illinois Institute of Technology. We strive to inspire, educate, and connect
               students through workshops, events, and collaborative opportunities, empowering them to excel in the ever-evolving world of technology.
             </p>
-          </div>
-          <Image className="rounded-md" alt="ACM IIT Picture" src={`/assets/acm_pictures/1.jpeg`} width={450} height={450} />
-        </section> */}
+          </div> */}
+        </section>
       </main>
     </div>
   );
