@@ -19,7 +19,7 @@ export const Gallery = () => {
     ];
 
     const ref = useRef(null);
-    const isInView = useInView(ref, { once: false, amount: 0.3 });
+    // const isInView = useInView(ref, { once: false, amount: 0.3 });
 
     return (
         <div className="relative w-full overflow-hidden">
