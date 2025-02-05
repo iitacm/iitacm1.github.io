@@ -1,13 +1,14 @@
 import React from "react";
 import { NavigationBar } from "@/components/ui/navigation-bar";
 import { CarouselPlugin } from "@/components/ui/home-carousel";
+import { Gallery } from "@/components/gallery";
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 
 const Home = () => {
   return (
-    <div className="relative flex flex-col min-h-screen overflow-hidden">
+    <div className="relative flex flex-col min-h-screen ">
       {/* Top left Blurred Circle */}
       <div className="absolute top-[-100px] left-[-100px] w-80 h-80 bg-light-red rounded-full blur-[80px] opacity-30"></div>
       {/* Mid left Blurred Circle */}
@@ -70,17 +71,12 @@ const Home = () => {
         </section>
 
         {/* Gallery Section */}
-
-        <section className="relative flex flex-col items-center lg:flex-row lg:items-start justify-between lg:h-[500px] p-8 lg:p-24 gap-4">
-          <Image className="absolute top-[-50px] left-1/2 tranform -translate-x-1/2 max-w-full" src={`/assets/acm_pictures/little_stars.png`} height={195} width={1000} alt="ACM's Little Stars" />
-          {/* <div className="w-full flex flex-col items-center mt-4 lg:w-1/2 lg:mt-0 lg:h-full">
-            <h2 className="text-lg text-center text-accent-color-primary">ABOUT US</h2>
-            <p className="font-raleway text-sm mt-2 flex-1">
-              ACM IIT is the premier student chapter dedicated to advancing computing knowledge, fostering innovation, 
-              and building a thriving community of tech enthusiasts at Illinois Institute of Technology. We strive to inspire, educate, and connect
-              students through workshops, events, and collaborative opportunities, empowering them to excel in the ever-evolving world of technology.
-            </p>
-          </div> */}
+        <section className="mt-8 w-full relative flex flex-col items-center lg:flex-row lg:items-start justify-between lg:h-auto p-8 lg:p-24 gap-4">
+          <Image className="absolute top-[10px] left-1/2 tranform -translate-x-1/2 max-w-full" src={`/assets/acm_pictures/little_stars.png`} height={195} width={1000} alt="ACM's Little Stars" />
+          <div className="w-full flex flex-col items-center mt-4 lg:mt-0 lg:h-full">
+            <h2 className="text-xl text-center">Building Connections, Inspiring Collaborations and Growing Together</h2>
+            <Gallery />
+          </div>
         </section>
       </main>
     </div>
