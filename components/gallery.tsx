@@ -20,7 +20,7 @@ export const Gallery = () => {
     const ref = useRef(null);
 
     return (
-        <div className="relative w-full overflow-hidden">
+        <div className="mt-8 relative w-full overflow-hidden">
       {/* Desktop - Grid Layout with Shake Effect */}
       <motion.div
         ref={ref}
@@ -65,9 +65,11 @@ export const Gallery = () => {
               <Image
                 src={src}
                 alt={`Gallery Image ${index + 1}`}
-                layout="fill"
-                objectFit="cover"
-                className="rounded-lg"
+                // layout="fill"
+                // objectFit="cover"
+                width={500}
+                height={500}
+                className="rounded-lg object-cover layout-fill w-full h-full"
               />
             </div>
           ))}
