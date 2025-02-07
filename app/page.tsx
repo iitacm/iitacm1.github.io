@@ -5,6 +5,9 @@ import { Gallery } from "@/components/gallery";
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
+import { TeamSection } from "@/components/team-section";
+import { NewsletterSignup } from "@/components/newsletter-signup";
+import { Footer } from "@/components/ui/footer";
 
 const Home = () => {
   return (
@@ -78,6 +81,17 @@ const Home = () => {
             <Gallery />
           </div>
         </section>
+
+        {/* Team Section */}
+        <TeamSection  />
+
+        {/* Newsletter Section */}
+        <section className="w-full p-8 lg:p-24">
+          <NewsletterSignup />
+        </section>
+
+        {/* Footer */}
+        <Footer />
       </main>
     </div>
   );

@@ -19,7 +19,7 @@ export default {
   		},
   		colors: {
   			fontcolor: 'var(--font-color)',
-  			background: 'hsl(var(--background))',
+  			background: 'var(--background-color)',
   			'accent-color': {
   				primary: 'var(--accent-color)',
   				secondary: 'var(--accent-color-2)'
