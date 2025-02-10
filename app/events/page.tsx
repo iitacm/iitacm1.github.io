@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import { FeaturedEventSection } from '@/components/events/featured-event';
+import { EventsTabs } from '@/components/events/events-tabs';
 
 const Page = () => {
     return(
@@ -28,6 +29,12 @@ const Page = () => {
 
         {/* Featured Event Section */}
         <FeaturedEventSection />
+
+        {/* Events Tabs */}
+        <section className="w-full my-8 px-8 lg:px-24 max-w-6xl mx-auto">
+            <EventsTabs />
+        </section>
+        <br />
         </>
     );
 }
