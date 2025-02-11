@@ -1,6 +1,6 @@
 "use client"
-import { CalendarIcon } from "lucide-react"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
+import { GoogleSVG } from "@/app/svgs"
 
 interface Event {
   name: string
@@ -28,48 +28,43 @@ const upcomingEvents: Event[] = [
 
 const pastEvents: Event[] = [
   {
-    name: "Past Event",
-    date: "Dec 1st 2023",
-    description: "Past event description",
-  },
-  {
-    name: "Past Event",
-    date: "Nov 28th 2023",
-    description: "Past event description",
+    name: "Career Elevation Workshop",
+    date: "Feb 8th 2025",
+    description: "Polish your Resume and Elevator Pitch with insights from industry experts to boost your career.",
   },
 ]
 
 export function EventsTabs() {
   return (
-    <Tabs defaultValue="upcoming" className="w-full max-w-4xl mx-auto">
+    <Tabs defaultValue="upcoming" className="font-raleway w-full max-w-4xl mx-auto">
       <TabsList className="grid w-full grid-cols-3 mb-8">
         <TabsTrigger
           value="upcoming"
-          className="data-[state=active]:bg-black data-[state=active]:text-white rounded-full"
+          className="data-[state=active]:bg-fontcolor data-[state=active]:text-background rounded-full"
         >
           UPCOMING EVENTS
         </TabsTrigger>
         <TabsTrigger
           value="calendar"
-          className="data-[state=active]:bg-black data-[state=active]:text-white rounded-full"
+          className="data-[state=active]:bg-fontcolor data-[state=active]:text-background rounded-full"
         >
           CALENDER
         </TabsTrigger>
-        <TabsTrigger value="past" className="data-[state=active]:bg-black data-[state=active]:text-white rounded-full">
+        <TabsTrigger value="past" className="data-[state=active]:bg-fontcolor data-[state=active]:text-background rounded-full">
           PAST EVENTS
         </TabsTrigger>
       </TabsList>
 
       <TabsContent value="upcoming" className="space-y-4">
         {upcomingEvents.map((event, index) => (
-          <div key={index} className="flex items-start justify-between p-6 border-b">
+          <div key={index} className="font-raleway flex items-start justify-between p-6 border-b">
             <div className="space-y-2">
-              <h3 className="text-2xl font-bold">{event.name}</h3>
-              <p className="text-red-500">{event.date}</p>
+              <h3 className="text-2xl text-fontcolor font-bold">{event.name}</h3>
+              <p className="text-light-red">{event.date}</p>
               <p className="text-gray-600">{event.description}</p>
             </div>
-            <button className="flex items-center gap-2 text-sm">
-              <CalendarIcon className="w-4 h-4" />
+            <button className="flex items-center gap-2 text-sm font-bold">
+              <GoogleSVG className="w-4 h-4" color="#CC0000" />
               Add to Google
             </button>
           </div>
@@ -96,11 +91,11 @@ export function EventsTabs() {
 
       <TabsContent value="past" className="space-y-4">
         {pastEvents.map((event, index) => (
-          <div key={index} className="flex items-start justify-between p-6 border-b">
+          <div key={index} className="font-raleway flex items-start justify-between p-6 border-b">
             <div className="space-y-2">
-              <h3 className="text-2xl font-bold">{event.name}</h3>
-              <p className="text-red-500">{event.date}</p>
-              <p className="text-gray-600">{event.description}</p>
+              <h3 className="text-2xl text-fontcolor font-bold">{event.name}</h3>
+              <p className="text-gray font-bold">{event.date}</p>
+              <p className="text-gray">{event.description}</p>
             </div>
           </div>
         ))}
