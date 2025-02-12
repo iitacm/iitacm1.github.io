@@ -1,48 +1,56 @@
 "use client"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
-import { GoogleSVG } from "@/app/svgs"
-
-interface Event {
-  name: string
-  date: string
-  description: string
-}
+import { type Event } from "@/lib/interfaces"
+import { formatEventDate } from "@/lib/utils"
+import { AddToCalendar } from "./add-to-calendar"
 
 const upcomingEvents: Event[] = [
-  {
-    name: "Event Name",
-    date: "Jan 5th 2024",
-    description: "Event Description. More about this event",
-  },
-  {
-    name: "Event Name",
-    date: "Jan 5th 2024",
-    description: "Event Description. More about this event",
-  },
-  {
-    name: "Event Name",
-    date: "Jan 5th 2024",
-    description: "Event Description. More about this event",
-  },
+  // {
+  //   name: "Testing Event",
+  //   description: "Event Description. More about this event",
+  //   date: "2024-01-05 12:00",
+  //   endDate: "2024-01-05 14:30",
+  //   location: "Online",
+  //   timezone: "America/Chicago",
+  // },
+  // {
+  //   name: "Event Name",
+  //   date: "2024-01-05 03:00",
+  //   description: "Event Description. More about this event",
+  //   endDate: "2024-01-05 23:59",
+  //   location: "Online",
+  //   timezone: "America/Chicago",
+  // },
+  // {
+  //   name: "Event Name",
+  //   date: "2024-01-05 00:00",
+  //   description: "Event Description. More about this event",
+  //   endDate: "2024-01-05 23:59",
+  //   location: "Online",
+  //   timezone: "America/Chicago",
+  // },
 ]
 
 const pastEvents: Event[] = [
   {
     name: "Career Elevation Workshop",
-    date: "Feb 8th 2025",
+    date: "2024-01-05 00:00",
     description: "Polish your Resume and Elevator Pitch with insights from industry experts to boost your career.",
+    endDate: "2025-02-08 23:59",
+    location: "Online",
+    timezone: "America/Chicago",
   },
 ]
 
 export function EventsTabs() {
   return (
-    <Tabs defaultValue="upcoming" className="font-raleway w-full max-w-4xl mx-auto">
+    <Tabs defaultValue={upcomingEvents.length > 1 ? "upcoming" : "past"} className="font-raleway w-full max-w-4xl mx-auto">
       <TabsList className="grid w-full grid-cols-3 mb-8">
         <TabsTrigger
           value="upcoming"
           className="data-[state=active]:bg-fontcolor data-[state=active]:text-background rounded-full"
         >
-          UPCOMING EVENTS
+          UPCOMING
         </TabsTrigger>
         <TabsTrigger
           value="calendar"
@@ -51,24 +59,21 @@ export function EventsTabs() {
           CALENDER
         </TabsTrigger>
         <TabsTrigger value="past" className="data-[state=active]:bg-fontcolor data-[state=active]:text-background rounded-full">
-          PAST EVENTS
+          PAST
         </TabsTrigger>
       </TabsList>
 
       <TabsContent value="upcoming" className="space-y-4">
-        {upcomingEvents.map((event, index) => (
+        {upcomingEvents.length > 1 ? upcomingEvents.map((event, index) => (
           <div key={index} className="font-raleway flex items-start justify-between p-6 border-b">
             <div className="space-y-2">
               <h3 className="text-2xl text-fontcolor font-bold">{event.name}</h3>
-              <p className="text-light-red">{event.date}</p>
+              <p className="text-light-red">{formatEventDate(event.date)}</p>
               <p className="text-gray-600">{event.description}</p>
             </div>
-            <button className="flex items-center gap-2 text-sm font-bold">
-              <GoogleSVG className="w-4 h-4" color="#CC0000" />
-              Add to Google
-            </button>
+            <AddToCalendar {...event} />
           </div>
-        ))}
+        )) : <div className="flex items-center justify-center p-6 h-24"><h3 className="text-lg">Stay tuned... We&apos;re cooking.</h3></div>}
       </TabsContent>
 
       <TabsContent value="calendar" className="min-h-[600px] bg-blue-50/50 rounded-lg p-4">
@@ -94,7 +99,7 @@ export function EventsTabs() {
           <div key={index} className="font-raleway flex items-start justify-between p-6 border-b">
             <div className="space-y-2">
               <h3 className="text-2xl text-fontcolor font-bold">{event.name}</h3>
-              <p className="text-gray font-bold">{event.date}</p>
+              <p className="text-gray font-bold">{formatEventDate(event.date)}</p>
               <p className="text-gray">{event.description}</p>
             </div>
           </div>
