@@ -7,11 +7,10 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { TeamSection } from "@/components/team-section";
 import { NewsletterSignup } from "@/components/newsletter-signup";
-import { Footer } from "@/components/ui/footer";
 
 const Home = () => {
   return (
-    <div className="relative flex flex-col min-h-screen ">
+    <div className="relative flex flex-col min-h-screen">
       {/* Top left Blurred Circle */}
       <div className="absolute top-[-100px] left-[-100px] w-80 h-80 bg-light-red rounded-full blur-[80px] opacity-30"></div>
       {/* Mid left Blurred Circle */}
@@ -91,7 +90,7 @@ const Home = () => {
         </section>
 
         {/* Footer */}
-        <Footer />
+        {/* <Footer /> */}
       </main>
     </div>
   );

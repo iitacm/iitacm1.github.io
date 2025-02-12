@@ -28,7 +28,7 @@ export const Footer = () => {
           <h3 className="text-base lg:text-lg tracking-wider">JOIN OUR MAILING LIST.</h3>
           <Button
             variant="outline"
-            className="border-red-500 text-red-500 hover:bg-red-500 hover:text-white px-6 py-2"
+            className="border-accent-color-primary text-accent-color-primary hover:bg-accent-color-primary hover:text-background px-6 py-2"
           >
             join now
           </Button>

@@ -33,7 +33,7 @@ const teamMembers = [
 export const TeamSection = () => {
   return (
     <section className="bg-background py-16 px-8 text-center">
-      <h2 className="text-2xl font-bold mb-6">Sneak peek of our Team</h2>
+      <h2 className="text-2xl mb-6">Sneak peek of our Team</h2>
 
       {/* Team Grid */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
@@ -55,7 +55,7 @@ export const TeamSection = () => {
                 className="rounded-lg object-cover w-full h-full layout-fill"
             />
             </div>
-            <h3 className="text-lg font-bold mt-4 text-light-red">{member.role}</h3>
+            <h3 className="text-lg mt-4 text-light-red">{member.role}</h3>
             <p className="text-sm">{member.name}</p>
         </div>
         </Link>
