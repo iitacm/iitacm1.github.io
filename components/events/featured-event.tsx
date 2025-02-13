@@ -11,7 +11,7 @@ export const FeaturedEventSection = () => {
                 <div className="flex-1 w-full h-[2px] bg-accent-color-primary rounded-lg"></div>
             </div>
             <div className="flex flex-col lg:flex-row gap-4">
-                <div className="w-full h-64 lg:w-1/2 bg-light-red">
+                <div className="w-full h-64 lg:w-1/2">
                     <Image 
                     alt={`Featured Event`} 
                     src={featuredEventImage} 
