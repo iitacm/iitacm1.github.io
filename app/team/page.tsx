@@ -11,6 +11,18 @@ const Page = () => {
         
         {/* Header */}
         <Header pageName="Team" title="Know us." headerText={teamHeaderText} />
+        <div className="my-16 px-8 lg:px-24">
+            {/* Team Type (eg, Leadership Team) */}
+            <div className="team">
+                <h3 className="mb-4">Leadership Team</h3>
+                <div className="board-members grid grid-cols-1 gap-8 lg:grid-cols-3 lg:gap-12">
+                    <div className="bg-gray h-24 w-full"></div>
+                    <div className="bg-gray h-24 w-full"></div>
+                    <div className="bg-gray h-24 w-full"></div>
+                    <div className="bg-gray h-24 w-full"></div>
+                </div>
+            </div>
+        </div>
         </>
     );
 };
