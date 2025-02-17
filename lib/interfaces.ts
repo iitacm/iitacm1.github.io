@@ -6,4 +6,14 @@ export interface Event {
     location: string; // Event location
     timezone: string; // Event timezone
 }
+
+export interface BoardMember {
+    name: string;
+    github: string | null;
+    linkedin: string | null;
+    twitter: string | null;
+    picture: string;
+    info: string;
+    position: string;
+}
   

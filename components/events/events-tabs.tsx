@@ -5,14 +5,14 @@ import { formatEventDate } from "@/lib/utils"
 import { AddToCalendar } from "./add-to-calendar"
 
 const upcomingEvents: Event[] = [
-  // {
-  //   name: "Women in Tech Panel",
-  //   description: "An engaging discussion with Jasleen Bedi from Discover and Omotola, a Senior Software Engineer at Microsoft on the topic.",
-  //   date: "2024-03-10 13:00",
-  //   endDate: "2024-03-10 15:30",
-  //   location: "Kaplan Institute, Chicago",
-  //   timezone: "America/Chicago",
-  // }
+  {
+    name: "Women in Tech Panel",
+    description: "An engaging discussion with Jasleen Bedi from Discover and Omotola, a Senior Software Engineer at Microsoft on the topic. Join us to learn more about their journey and experiences.",
+    date: "2024-03-10 13:00",
+    endDate: "2024-03-10 15:30",
+    location: "Kaplan Institute, Chicago",
+    timezone: "America/Chicago",
+  }
 ]
 
 const pastEvents: Event[] = [
@@ -50,7 +50,7 @@ export function EventsTabs() {
       <TabsContent value="upcoming" className="space-y-4">
         {upcomingEvents.length > 0 ? upcomingEvents.map((event, index) => (
           <div key={index} className="font-raleway flex items-start justify-between p-6 border-b">
-            <div className="space-y-2">
+            <div className="space-y-2 max-w-1/2 lg:max-w-[calc(100%-120px)]">
               <h3 className="text-2xl text-fontcolor font-bold">{event.name}</h3>
               <p className="text-light-red">{formatEventDate(event.date)}</p>
               <p className="text-gray-600">{event.description}</p>
@@ -61,9 +61,11 @@ export function EventsTabs() {
       </TabsContent>
 
       <TabsContent value="calendar" className="min-h-[600px] bg-blue-50/50 rounded-lg p-4">
-        <iframe 
-        src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=America%2FChicago&bgcolor=%23ffffff&src=YWNtQGlpdC5lZHU&src=Y18yMWZlOWQ5YWIwYzBhNTk1OTUwOWViNDU5NThiMmZiY2JkODRiY2MwYTNmMTI0YmY1MzAxYTk4YmE5ZjVkZWI2QGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&src=ZW4udXNhI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&color=%23AD1457&color=%233F51B5&color=%230B8043" className="border border-1" width="800" height="600">
-        </iframe>
+        <div className="w-full overfolow-scroll">
+          <iframe 
+          src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=America%2FChicago&bgcolor=%23ffffff&src=YWNtQGlpdC5lZHU&src=Y18yMWZlOWQ5YWIwYzBhNTk1OTUwOWViNDU5NThiMmZiY2JkODRiY2MwYTNmMTI0YmY1MzAxYTk4YmE5ZjVkZWI2QGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&src=ZW4udXNhI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&color=%23AD1457&color=%233F51B5&color=%230B8043" className="border border-1" width="800" height="600">
+          </iframe>
+        </div>
         {/* <div className="flex items-center justify-between mb-4">
           <h2 className="text-lg font-semibold">December 2024</h2>
           <div className="flex gap-2">

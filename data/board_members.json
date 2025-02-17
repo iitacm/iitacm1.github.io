@@ -1,0 +1,20 @@
+[
+    {
+        "name": "Jane Doe",
+        "github": "janedoe",
+        "linkedin": "janedoe",
+        "twitter": "janedoe",
+        "picture": "images/board_members/jane_doe.jpg",
+        "info": "Jane Doe is the Vice Chairman of the board.",
+        "position": "Vice Chairman"
+    },
+    {
+        "name": "John Doe",
+        "github": "johndoe",
+        "linkedin": "johndoe",
+        "twitter": "johndoe",
+        "picture": "images/board_members/john_doe.jpg",
+        "info": "John Doe is the Chairman of the board.",
+        "position": "Chairman"
+    }
+]
