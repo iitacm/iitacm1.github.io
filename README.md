@@ -1,36 +1,51 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# ACM Illinois Tech Website Repository
 
 ## Getting Started
 
-First, run the development server:
+Follow these instructions to clone the repository locally and run the server.
 
-```bash
+### Prerequisites
+
+Make sure you have the following installed on your machine:
+
+- [Node.js](https://nodejs.org/) (version 18.x or later)
+- [npm](https://www.npmjs.com/) (version 9.x or later) or [yarn](https://yarnpkg.com/) (version 1.x or later)
+
+### Cloning the Repository
+
+1. Open your terminal or command prompt.
+2. Clone the repository using the following command:
+
+```sh
+git clone https://github.com/iitacm1/iitacm1.github.io.git
+```
+
+3.  Navigate to the project directory:
+
+```sh
+cd iitacm1.github.io
+```
+
+### Installing Dependencies
+
+Install the project dependencies using npm or yarn:
+
+```sh
+npm install 
+# or 
+yarn install
+```
+
+### Running the Server
+
+Start the development server with the following command:
+
+```sh
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Accessing the Application 
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Open your browser and navigate to http://localhost:3000 to see the application running.
