@@ -1,20 +1,158 @@
 [
     {
-        "name": "Jane Doe",
-        "github": "janedoe",
-        "linkedin": "janedoe",
-        "twitter": "janedoe",
-        "picture": "images/board_members/jane_doe.jpg",
-        "info": "Jane Doe is the Vice Chairman of the board.",
-        "position": "Vice Chairman"
+        "name": "Jason Azheng",
+        "position": "President",
+        "more_info": "Jason is a great man I believe.",
+        "picture": "/assets/acm_pictures/team/jason_new.jpg",
+        "year": "2026",
+        "socials": {
+            "linkedin": "https://www.linkedin.com/in/jzheng39/"
+        },
+        "category": "Leadership Team"
     },
     {
-        "name": "John Doe",
-        "github": "johndoe",
-        "linkedin": "johndoe",
-        "twitter": "johndoe",
-        "picture": "images/board_members/john_doe.jpg",
-        "info": "John Doe is the Chairman of the board.",
-        "position": "Chairman"
+        "name": "Jiya Sheetal Rathi",
+        "position": "Vice President",
+        "more_info": "She is very nice.",
+        "picture": "/assets/acm_pictures/team/jiya.jpg",
+        "year": "2026",
+        "socials": {
+            "linkedin": "https://www.linkedin.com/in/jiyarathi"
+        },
+        "category": "Leadership Team"
+    },
+    {
+        "name": "Lorena Rodriguez",
+        "position": "Secretary",
+        "more_info": "Good listener.",
+        "picture": "/assets/acm_pictures/team/lorena.jpg",
+        "year": "2026",
+        "socials": {
+            "linkedin": "https://www.linkedin.com/in/lorenaramirez1"
+        },
+        "category": "Leadership Team"
+    },
+    {
+        "name": "Harish Namasivayam Muthuswamy",
+        "position": "Vice Treasurer",
+        "more_info": "He is too cheerful.",
+        "picture": "/assets/acm_pictures/team/harish.jpg",
+        "year": "2026",
+        "socials": {
+            "linkedin": "https://www.linkedin.com/in/harish-namasivayam-muthuswamy"
+        },
+        "category": "Leadership Team"
+    },
+    {
+        "name": "Nick Naing",
+        "position": "External Events Coordinator",
+        "more_info": "Good teacher.",
+        "picture": "/assets/acm_pictures/team/nick.png",
+        "year": "2026",
+        "socials": {
+            "linkedin": "https://www.linkedin.com/in/kaungmyatnaing9",
+            "portfolio": "https://kaungmyatnaing.com"
+        },
+        "category": "Operations Team"
+    },
+    {
+        "name": "Edwin Huallpa",
+        "position": "Events Coordinator",
+        "more_info": "He is very good at coding.",
+        "picture": "/assets/acm_pictures/team/edwin.jpg",
+        "year": "2026",
+        "socials": {
+            "linkedin": "https://www.linkedin.com/in/edwin-huallpa-346868281",
+            "instagram": "https://www.instagram.com/hl7joao"
+        },
+        "category": "Operations Team"
+    },
+    {
+        "name": "Vijay Kumar Reddy Ponugoti",
+        "position": "Creative Director",
+        "more_info": "Good Designer.",
+        "picture": "/assets/acm_pictures/team/vijay.jpg",
+        "year": "2026",
+        "socials": {
+            "linkedin": "http://linkedin.com/in/vijay-ponugoti"
+        },
+        "category": "Operations Team"
+    },
+    {
+        "name": "Krishna Ram Saravanakumar",
+        "position": "Operations Lead",
+        "more_info": "Good Designer.",
+        "picture": "/assets/acm_pictures/team/vijay.jpg",
+        "year": "2026",
+        "socials": {
+            "linkedin": "https://www.linkedin.com/in/krishnarams"
+        },
+        "category": "Operations Team"
+    },
+    {
+        "name": "Govind Kurapati",
+        "position": "Web Developer",
+        "more_info": "Very good coder.",
+        "picture": "/assets/acm_pictures/team/govind.png",
+        "year": "2026",
+        "socials": {
+            "linkedin": "https://www.linkedin.com/in/govind-kurapati"
+        },
+        "category": "Technical Team"
+    },
+    {
+        "name": "Ashraf Abdul-Muumin",
+        "position": "Web Developer",
+        "more_info": "lol.",
+        "picture": "/assets/acm_pictures/team/ashraf.jpg",
+        "year": "2026",
+        "socials": {
+            "linkedin": "http://linkedin.com/in/vijay-ponugoti"
+        },
+        "category": "Technical Team"
+    },
+    {
+        "name": "Tashvi Mehta",
+        "position": "Community Engagement Chair",
+        "more_info": "A Community Engager...",
+        "picture": "/assets/acm_pictures/team/tashvi.jpg",
+        "year": "2026",
+        "socials": {
+            "instagram": "https://www.instagram.com/tashviii"
+        },
+        "category": "Operations Team"
+    },
+    {
+        "name": "Emma Diamon",
+        "position": "Event Director",
+        "more_info": "So patient and kind!",
+        "picture": "/assets/acm_pictures/team/emma.jpg",
+        "year": "2026",
+        "socials": {
+            "linkedin": "https://www.linkedin.com/in/emma-diamon"
+        },
+        "category": "Operations Team"
+    },
+    {
+        "name": "Jovan Titus",
+        "position": "Graphic Designer",
+        "more_info": "A Graphic Designer",
+        "picture": "/assets/acm_pictures/team/jovan.png",
+        "year": "2026",
+        "socials": {
+            "linkedin": "https://www.linkedin.com/in/jjovantitus"
+        },
+        "category": "Operations Team"
+    },
+    {
+        "name": "Gayathri Ananya",
+        "position": "Professional Development Chair",
+        "more_info": "A Professional Developer",
+        "picture": "/assets/acm_pictures/team/ananya.jpeg",
+        "year": "2026",
+        "socials": {
+            "linkedin": "https://www.linkedin.com/in/gayathri-ananya-175584174"
+        },
+        "category": "Operations Team"
     }
 ]

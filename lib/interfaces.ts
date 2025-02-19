@@ -7,13 +7,23 @@ export interface Event {
     timezone: string; // Event timezone
 }
 
+interface SocialLinks {
+    linkedin?: string;
+    portfolio?: string;
+    instagram?: string;
+    twitter?: string;
+    github?: string;
+}
+
+type TeamCategory = "Leadership Team" | "Operations Team" | "Technical Team";
+
 export interface BoardMember {
     name: string;
-    github: string | null;
-    linkedin: string | null;
-    twitter: string | null;
-    picture: string;
-    info: string;
     position: string;
+    more_info: string;
+    picture: string;
+    year: string;
+    socials: SocialLinks;
+    category: TeamCategory;
 }
   
