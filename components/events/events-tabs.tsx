@@ -5,14 +5,14 @@ import { formatEventDate } from "@/lib/utils"
 import { AddToCalendar } from "./add-to-calendar"
 
 const upcomingEvents: Event[] = [
-  {
-    name: "Women in Tech Panel",
-    description: "An engaging discussion with Jasleen Bedi from Discover and Omotola, a Senior Software Engineer at Microsoft on the topic. Join us to learn more about their journey and experiences.",
-    date: "2024-03-10 13:00",
-    endDate: "2024-03-10 15:30",
-    location: "Kaplan Institute, Chicago",
-    timezone: "America/Chicago",
-  }
+  // {
+  //   name: "Women in Tech Panel",
+  //   description: "An engaging discussion with Jasleen Bedi from Discover and Omotola, a Senior Software Engineer at Microsoft on the topic. Join us to learn more about their journey and experiences.",
+  //   date: "2024-03-10 13:00",
+  //   endDate: "2024-03-10 15:30",
+  //   location: "Kaplan Institute, Chicago",
+  //   timezone: "America/Chicago",
+  // }
 ]
 
 const pastEvents: Event[] = [
