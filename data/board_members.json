@@ -82,7 +82,7 @@
         "name": "Krishna Ram Saravanakumar",
         "position": "Operations Lead",
         "more_info": "Good Designer.",
-        "picture": "/assets/acm_pictures/team/krishna.png",
+        "picture": "/assets/acm_pictures/team/krishna_new.jpg",
         "year": "2026",
         "socials": {
             "linkedin": "https://www.linkedin.com/in/krishnarams"
@@ -96,7 +96,8 @@
         "picture": "/assets/acm_pictures/team/govind.png",
         "year": "2026",
         "socials": {
-            "linkedin": "https://www.linkedin.com/in/govind-kurapati"
+            "linkedin": "https://www.linkedin.com/in/govind-kurapati",
+            "portfolio": "https://govind-kurapati.com"
         },
         "category": "Technical Team"
     },
