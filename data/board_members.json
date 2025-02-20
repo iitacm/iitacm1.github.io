@@ -82,7 +82,7 @@
         "name": "Krishna Ram Saravanakumar",
         "position": "Operations Lead",
         "more_info": "Good Designer.",
-        "picture": "/assets/acm_pictures/team/vijay.jpg",
+        "picture": "/assets/acm_pictures/team/krishna.png",
         "year": "2026",
         "socials": {
             "linkedin": "https://www.linkedin.com/in/krishnarams"
@@ -107,7 +107,9 @@
         "picture": "/assets/acm_pictures/team/ashraf.jpg",
         "year": "2026",
         "socials": {
-            "linkedin": "http://linkedin.com/in/vijay-ponugoti"
+            "linkedin": "http://linkedin.com/in/chirix33",
+            "github": "https://www.github.com/chirix33",
+            "portfolio": "https://chirix.netlify.app"
         },
         "category": "Technical Team"
     },
