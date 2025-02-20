@@ -1,9 +1,5 @@
 import { Header } from "@/components/ui/page-header";
 import BoardMembers from "@/components/team/board-members";
-// import Image from "next/image";
-// import { Button } from "@/components/ui/button";
-// import { TbBrandLinkedin } from "react-icons/tb";
-
 
 
 const Page = () => {
