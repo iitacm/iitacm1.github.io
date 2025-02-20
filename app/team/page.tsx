@@ -1,7 +1,8 @@
 import { Header } from "@/components/ui/page-header";
-import Image from "next/image";
-import { Button } from "@/components/ui/button";
-import { TbBrandLinkedin } from "react-icons/tb";
+import BoardMembers from "@/components/team/board-members";
+// import Image from "next/image";
+// import { Button } from "@/components/ui/button";
+// import { TbBrandLinkedin } from "react-icons/tb";
 
 
 
@@ -18,7 +19,7 @@ const Page = () => {
         <Header pageName="Team" title="Know us." headerText={teamHeaderText} />
         <div className="my-16 px-8 lg:px-24">
             {/* Team Type (eg, Leadership Team) */}
-            <div className="team">
+            {/* <div className="team">
                 <h3 className="mb-8">Leadership Team</h3>
                 <div className="board-members grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3 lg:gap-12">
                     <div className="mx-auto md:mx-0 h-80 w-3/4">
@@ -38,66 +39,9 @@ const Page = () => {
                             </div>
                         </div>
                     </div>
-                    
-                    {/* <div className="h-80 w-3/4">
-                        <div className="h-3/4 w-full">
-                            <Image src="/assets/acm_pictures/team/jason_new.jpg" width={300} height={400} className="w-full h-full object-cover" alt="Team Member" />
-                        </div>
-                        <div className="flex flex-col mt-2">
-                            <h3 className="text-light-red text-lg">President</h3>
-                            <p className="text-sm text-gray">Jason Zheng</p>
-                            <div className="text-sm flex justify-between w-full items-center">
-                                <div className="socials flex items-center gap-2">
-                                    <span>X</span>
-                                    <span>LinkedIn</span>
-                                    <span>GitHub</span>
-                                </div>
-                                <div>
-                                    <Button variant="default" className="text-sm bg-gray text-background hover:bg-fontcolor">More Info</Button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="h-80 w-3/4">
-                        <div className="h-3/4 w-full">
-                            <Image src="/assets/acm_pictures/team/jason_new.jpg" width={300} height={400} className="w-full h-full object-cover" alt="Team Member" />
-                        </div>
-                        <div className="flex flex-col mt-2">
-                            <h3 className="text-light-red text-lg">President</h3>
-                            <p className="text-sm text-gray">Jason Zheng</p>
-                            <div className="text-sm flex justify-between w-full items-center">
-                                <div className="socials flex items-center gap-2">
-                                    <span>X</span>
-                                    <span>LinkedIn</span>
-                                    <span>GitHub</span>
-                                </div>
-                                <div>
-                                    <Button variant="default" className="text-sm bg-gray text-background hover:bg-fontcolor">More Info</Button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="h-80 w-3/4">
-                        <div className="h-3/4 w-full">
-                            <Image src="/assets/acm_pictures/team/jason_new.jpg" width={300} height={400} className="w-full h-full object-cover" alt="Team Member" />
-                        </div>
-                        <div className="flex flex-col mt-2">
-                            <h3 className="text-light-red text-lg">President</h3>
-                            <p className="text-sm text-gray">Jason Zheng</p>
-                            <div className="text-sm flex justify-between w-full items-center">
-                                <div className="socials flex items-center gap-2">
-                                    <span>X</span>
-                                    <span>LinkedIn</span>
-                                    <span>GitHub</span>
-                                </div>
-                                <div>
-                                    <Button variant="default" className="text-sm bg-gray text-background hover:bg-fontcolor">More Info</Button>
-                                </div>
-                            </div>
-                        </div>
-                    </div> */}
                 </div>
-            </div>
+            </div> */}
+            <BoardMembers />
         </div>
         </>
     );
