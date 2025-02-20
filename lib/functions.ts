@@ -1,0 +1,1 @@
+// Helper Functions used in the application

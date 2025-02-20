@@ -1,34 +1,18 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
+import boardMembers from "../data/board_members.json";
 
-const teamMembers = [
-  {
-    name: "Jason Zheng",
-    role: "President",
-    image: "/assets/acm_pictures/team/jason.png",
-  },
-  {
-    name: "Nick Naing",
-    role: "External Event Coordinator",
-    image: "/assets/acm_pictures/team/nick.png",
-  },
-  {
-    name: "Jiya Sheetal Rathi",
-    role: "Vice President",
-    image: "/assets/acm_pictures/team/jiya.jpg",
-  },
-  {
-    name: "Blurred Member 1",
-    role: "Member",
-    image: "/assets/acm_pictures/team/lorena.jpg",
-  },
-  {
-    name: "Blurred Member 2",
-    role: "Member",
-    image: "/assets/acm_pictures/team/vijay.jpg",
-  },
-];
+
+let teamMembers = [];
+let orgTeamMembers = [];
+
+// grab the first 3 board members from leadership team
+teamMembers = boardMembers.filter((member) => member.category == "Leadership Team");
+
+// grab the first 3 board members from operations team
+orgTeamMembers = boardMembers.filter((member) => member.category == "Operations Team");
+teamMembers = teamMembers.concat(orgTeamMembers.slice(0, 2));
 
 export const TeamSection = () => {
   return (
@@ -46,7 +30,7 @@ export const TeamSection = () => {
           >
             <div className="relative w-48 h-48 rounded-lg overflow-hidden">
             <Image
-                src={member.image}
+                src={member.picture}
                 alt={member.name}
                 // layout="fill"
                 // objectFit="cover"
@@ -55,7 +39,7 @@ export const TeamSection = () => {
                 className="rounded-lg object-cover w-full h-full layout-fill"
             />
             </div>
-            <h3 className="text-lg mt-4 text-light-red">{member.role}</h3>
+            <h3 className="text-lg mt-4 text-light-red">{member.position}</h3>
             <p className="text-sm">{member.name}</p>
         </div>
         </Link>
@@ -69,11 +53,6 @@ export const TeamSection = () => {
             VIEW ACM IIT TEAM
             </Button>
         </Link>
-        {/* <Link href="/team">
-          <button className="bg-red-600 text-white px-6 py-2 rounded-md border border-red-800 hover:bg-red-700 transition">
-            VIEW ACM IIT TEAM
-          </button>
-        </Link> */}
       </div>
     </section>
   );

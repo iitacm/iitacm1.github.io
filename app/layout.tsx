@@ -6,7 +6,38 @@ import { Footer } from "@/components/ui/footer";
 
 export const metadata: Metadata = {
   title: "ACM Illinois Tech",
-  description: "Website of Associate of Computing Machinery at Illinois Tech",
+  description: "The Official Website of Associate of Computing Machinery at Illinois Tech",
+  keywords: ["ACM", "IIT", "Illinois Tech", "Associate of Computing Machinery", "Illinois Institute of Technology", "ACM IIT", "ACM Illinois Tech", "ACM IIT Website", "ACM Illinois Tech Website"], 
+  authors: [{ name: "ACM Illinois Tech", url: "https://acmilliniostech.org" }],
+  openGraph: {
+    title: "ACM Illinois Tech",
+    description: "The Official Website of Associate of Computing Machinery at Illinois Tech",
+    url: "https://acmillinoistech.org",
+    siteName: "ACM Illinois Tech",
+    images: [
+      {
+        url: "../public/assets/acm_iit_logo.png",
+        width: 800,
+        height: 600,
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "ACM Illinois Tech",
+    description: "The official Website of Associate of Computing Machinery at Illinois Tech",
+    images: ["../public/assets/acm_iit_logo.png"],
+  },
+  robots: {
+    index: false,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: false,
+    },
+  }
 };
 
 // The fonts

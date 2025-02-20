@@ -35,11 +35,11 @@ export const AddToCalendar = (event : Event) => {
 
     return (
         
-        <div className="flex flex-col items-center gap-4">
+        <div className="flex flex-col items-center gap-4 font-bold">
             {/* Google Calendar Button */}
             <a href={googleCalendarUrl} target="_blank" rel="noopener noreferrer">
             <button className="flex items-center gap-2 text-sm">
-                <GoogleSVG className="w-4 h-4" color="#CC0000" />
+                <GoogleSVG className="w-6 h-6 lg:w-4 lg:h-4" color="#CC0000" />
                 Add to Google
             </button>
             </a>

@@ -5,6 +5,7 @@ import { usePathname } from "next/navigation";
 import { useState } from "react";
 import { MenuSVG, CloseSVG } from "@/app/svgs";
 import Image from "next/image";
+import Link from "next/link";
 
 export const NavigationBar = () => {
     const pathname = usePathname();
@@ -24,7 +25,7 @@ export const NavigationBar = () => {
         <nav className="z-10 w-full fixed top-0 left-0 px-8 lg:px-24 h-24 bg-background flex justify-center items-center">
             <div className="flex justify-between items-center w-full">
                 <div className="flex items-center space-x-4">
-                    <Image src="/assets/acm_iit_logo.png" alt="Logo" width={70} height={80} />
+                    <Link href="/" ><Image src="/assets/acm_iit_logo.png" alt="Logo" width={70} height={80} /></Link>
                 </div>
                 {/* Menu Items on Large Screen */}
                 <div className="hidden lg:flex items-center space-x-4 text-md flex-1 justify-end">
