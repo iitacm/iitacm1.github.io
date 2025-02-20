@@ -8,7 +8,7 @@ export const Footer = () => {
     <footer className="w-full bg-fontcolor text-white">
       
       {/* Socials and Mail List Row */}
-      <div className="p-8 lg:p-24 max-w-6xl mx-auto flex flex-col md:flex-row justify-between text-center md:text-left gap-8">
+      <div className="p-8 gap-8 lg:px-24 lg:py-16 max-w-6xl mx-auto flex flex-col md:flex-row justify-between text-center md:text-left lg:gap-4">
         {/* Left Section - Socials and Email */}
         <div className="flex flex-col items-center md:items-start gap-4">
           <h3 className="text-base lg:text-lg tracking-wider">CONNECT.</h3>
@@ -36,7 +36,7 @@ export const Footer = () => {
       </div>
 
       {/* Email Row */}
-      <div className="p-8 lg:py-16 lg:px-24 max-w-6xl mx-auto flex flex-col md:flex-row justify-between text-center md:text-left">
+      <div className="p-8 lg:py-12 lg:px-24 max-w-6xl mx-auto flex flex-col md:flex-row justify-between text-center md:text-left">
         <div className="flex flex-col items-center lg:items-start text-center gap-2">
             <h3 className="text-base lg:text-lg text-center flex gap-2 items-center"><EmailSVG /> EMAIL.</h3>
             <div>
@@ -50,11 +50,11 @@ export const Footer = () => {
         <Image
           src="/assets/acm_iit_logo.png"
           alt="ACM IIT Logo"
-          width={40}
-          height={40}
+          width={36}
+          height={36}
         />
-        <p className="text-xs text-gray-400 my-2 text-center">
-          Association of Computing Machinery <br /> Illinois Institute of Technology.
+        <p className="text-xs text-gray-400 my-4 text-center">
+          Made with ❤ from<br /> the Web Design Team at IIT.
         </p>
       </div>
     </footer>

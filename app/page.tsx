@@ -17,9 +17,11 @@ const Home = () => {
       <div className="absolute top-[600px] left-[-150px] w-80 h-80 bg-light-red rounded-full blur-[80px] opacity-30"></div>
 
       <NavigationBar />
+      
+
       <header className="mt-24 px-8 text-background bg-[url('/assets/header_background_1.png')] bg-cover flex flex-col space-y-4 justify-center items-center w-full h-96 lg:px-24 lg:flex-row lg:h-screen lg:space-x-4 lg:space-y-0">
         <div className="w-full lg:w-1/3 lg:flex-1">
-          <h3 className="text-2xl">Welcome to <span className="text-accent-color-primary">ACM IIT.</span></h3>
+          <h3 className="text-2xl lg:text-3xl">Welcome to <span className="text-accent-color-primary">ACM IIT.</span></h3>
           <p className="font-raleway text-sm mt-2">
             A vibrant community of tech enthusiasts through dyanmic events, engaging competitions, insightful 
             seminars, and exciting opportunities to learn, grow and innovate.
