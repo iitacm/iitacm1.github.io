@@ -5,14 +5,11 @@ import boardMembers from "../data/board_members.json";
 
 
 let teamMembers = [];
-let orgTeamMembers = [];
+// let orgTeamMembers = [];
 
 // grab the first 3 board members from leadership team
 teamMembers = boardMembers.filter((member) => member.category == "Leadership Team");
 
-// grab the first 3 board members from operations team
-orgTeamMembers = boardMembers.filter((member) => member.category == "Operations Team");
-teamMembers = teamMembers.concat(orgTeamMembers.slice(0, 2));
 
 export const TeamSection = () => {
   return (
