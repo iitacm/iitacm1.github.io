@@ -17,7 +17,7 @@ export const TeamSection = () => {
       <h2 className="text-2xl mb-6">Sneak peek of our Team</h2>
 
       {/* Team Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto max-h-80 overflow-y-hidden">
         {teamMembers.map((member, index) => (
         <Link key={index} href="/team" target="_blank">
         <div

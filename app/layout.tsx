@@ -6,6 +6,9 @@ import { Footer } from "@/components/ui/footer";
 
 export const metadata: Metadata = {
   title: "ACM Illinois Tech",
+  icons: [
+    { rel: "icon", url: "https://raw.githubusercontent.com/iitacm/iitacm1.github.io/refs/heads/main/app/favicon.ico" }
+  ],
   description: "The Official Website of Associate of Computing Machinery at Illinois Tech",
   keywords: ["ACM", "IIT", "Illinois Tech", "Associate of Computing Machinery", "Illinois Institute of Technology", "ACM IIT", "ACM Illinois Tech", "ACM IIT Website", "ACM Illinois Tech Website"], 
   authors: [{ name: "ACM Illinois Tech", url: "https://acmilliniostech.org" }],
