@@ -3,26 +3,31 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { type Event } from "@/lib/interfaces"
 import { formatEventDate } from "@/lib/utils"
 import { AddToCalendar } from "./add-to-calendar"
+import Link from "next/link"
 
 const upcomingEvents: Event[] = [
-  // {
-  //   name: "Women in Tech Panel",
-  //   description: "An engaging discussion with Jasleen Bedi from Discover and Omotola, a Senior Software Engineer at Microsoft on the topic. Join us to learn more about their journey and experiences.",
-  //   date: "2024-03-10 13:00",
-  //   endDate: "2024-03-10 15:30",
-  //   location: "Kaplan Institute, Chicago",
-  //   timezone: "America/Chicago",
-  // }
+  {
+    name: "ICPC Event - Crack the Code - 2",
+    description: "Following our successful Introduction to Cracking Coding Problems session, we are excited to bring you Part 2 of our ICPC Coding Workshop, featuring Professor Michael Lee. In this session, we\’ll dive deeper into competitive programming techniques, covering essential problem-solving strategies, algorithmic thinking, and hands-on coding challenges.",
+    date: "2025-02-27 12:45",
+    endDate: "2024-02-27 14:00",
+    location: "Stuart Building, Chicago, IL",
+    place: "SB 111",
+    timezone: "America/Chicago",
+    link: "https://www.linkedin.com/posts/acm-iit_competitiveprogramming-icpc-codingchallenges-activity-7299986111169187841-Zjrp?utm_source=share&utm_medium=member_desktop&rcm=ACoAACEEUYEBfR38tezSmfZ_VCQFeUnQkTa7YhY"
+  }
 ]
 
 const pastEvents: Event[] = [
   {
     name: "Career Elevation Workshop",
-    date: "2024-01-05 00:00",
+    date: "2025-02-08 11:30",
     description: "Polish your Resume and Elevator Pitch with insights from industry experts to boost your career.",
-    endDate: "2025-02-08 23:59",
+    endDate: "2025-02-08 16:00",
     location: "Online",
+    place: "Kaplan Tellabs",
     timezone: "America/Chicago",
+    link: null
   },
 ]
 
@@ -54,6 +59,7 @@ export function EventsTabs() {
               <h3 className="text-2xl text-fontcolor font-bold">{event.name}</h3>
               <p className="text-light-red">{formatEventDate(event.date)}</p>
               <p className="text-gray-600">{event.description}</p>
+              { event.link && <p className="mt-2"><Link href={event.link} target="_blank" className="pb-2 border-b border-light-red text-light-red">Learn More</Link></p> }
             </div>
             <AddToCalendar {...event} />
           </div>

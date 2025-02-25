@@ -4,7 +4,9 @@ export interface Event {
     date: string; // Event start date
     endDate: string; // Event end date
     location: string; // Event location
+    place: string; // Event place
     timezone: string; // Event timezone
+    link: string | null; // Event link
 }
 
 interface SocialLinks {
