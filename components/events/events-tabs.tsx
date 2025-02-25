@@ -10,7 +10,7 @@ const upcomingEvents: Event[] = [
     name: "ICPC Event - Crack the Code - 2",
     description: "Following our successful Introduction to Cracking Coding Problems session, we are excited to bring you Part 2 of our ICPC Coding Workshop, featuring Professor Michael Lee. In this session, we\’ll dive deeper into competitive programming techniques, covering essential problem-solving strategies, algorithmic thinking, and hands-on coding challenges.",
     date: "2025-02-27 12:45",
-    endDate: "2024-02-27 14:00",
+    endDate: "2025-02-27 14:00",
     location: "Stuart Building, Chicago, IL",
     place: "SB 111",
     timezone: "America/Chicago",
@@ -71,21 +71,6 @@ export function EventsTabs() {
           <iframe 
           src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=America%2FChicago&bgcolor=%23ffffff&src=YWNtQGlpdC5lZHU&src=Y18yMWZlOWQ5YWIwYzBhNTk1OTUwOWViNDU5NThiMmZiY2JkODRiY2MwYTNmMTI0YmY1MzAxYTk4YmE5ZjVkZWI2QGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&src=ZW4udXNhI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&color=%23AD1457&color=%233F51B5&color=%230B8043" className="border border-1" width="800" height="600">
           </iframe>
-        </div>
-        {/* <div className="flex items-center justify-between mb-4">
-          <h2 className="text-lg font-semibold">December 2024</h2>
-          <div className="flex gap-2">
-            <button className="p-2">←</button>
-            <button className="p-2">→</button>
-          </div>
-        </div> */}
-        <div className="grid grid-cols-7 gap-4">
-          {/* Calendar placeholder - In a real app, you'd integrate with a calendar library */}
-          {/* {Array.from({ length: 35 }).map((_, i) => (
-            <div key={i} className="aspect-square border rounded-lg p-2 bg-white">
-              {i + 1}
-            </div>
-          ))} */}
         </div>
       </TabsContent>
 
