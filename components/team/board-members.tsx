@@ -1,14 +1,19 @@
 import Link from "next/link";
 import Image from "next/image";
+// import { useState } from "react";
 import { getBoardMembers } from "@/lib/functions";
 import { BoardMember, TeamCategory } from "@/lib/interfaces";
 import { Button } from "@/components/ui/button";
 import { TbBrandLinkedin } from "react-icons/tb";
 import { TwitterSVG, InstagramSVG2, GitHubSVG, PortfolioSVG } from "@/app/svgs";
+// import { BoardMemberModal } from "./board-member-modal";
 
 const BoardMembers = () => {
     const boardMembers: BoardMember[] = getBoardMembers();
     const categories: TeamCategory[] = ["Leadership Team", "Operations Team", "Technical Team"];
+    
+    // State for the selected member to show in the modal
+    // const [selectedMember, setSelectedMember] = useState<BoardMember | null>(null);
 
     const renderMembersByCategory = (category: string) => {
         return boardMembers
@@ -48,9 +53,15 @@ const BoardMembers = () => {
                                     <GitHubSVG className="w-6 h-6" />
                                 </Link>
                             )}
-                            {/* <span className="text-fontcolor"><TbBrandLinkedin className="w-6 h-6" /></span> */}
                         </div>
                         <div>
+                            {/* <Button
+                            variant="default"
+                            className="text-sm bg-gray text-background hover:bg-fontcolor"
+                            onClick={() => setSelectedMember(member)}
+                            >
+                            More Info
+                            </Button> */}
                             <Button variant="default" className="text-sm bg-gray text-background hover:bg-fontcolor">More Info</Button>
                         </div>
                     </div>
@@ -71,6 +82,12 @@ const BoardMembers = () => {
                     </div>
                 ))
             }
+
+            {/* {
+                selectedMember && (
+                    <BoardMemberModal member={selectedMember} onClose={() => setSelectedMember(null)} />
+                )
+            } */}
         </>
     );
 };
