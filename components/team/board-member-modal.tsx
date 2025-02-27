@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import { BoardMember } from "@/lib/interfaces"; // Ensure this interface includes `more_info`
+import { CloseSVG } from "@/app/svgs";
 
 interface BoardMemberModalProps {
   member: BoardMember;
@@ -17,7 +18,7 @@ export const BoardMemberModal: React.FC<BoardMemberModalProps> = ({ member, onCl
           onClick={onClose}
           aria-label="Close modal"
         >
-          &#x2715;
+          <CloseSVG />
         </button>
         <div className="flex flex-col items-center">
           <Image
@@ -28,7 +29,7 @@ export const BoardMemberModal: React.FC<BoardMemberModalProps> = ({ member, onCl
             alt={member.name}
           />
           <h3 className="mt-4 text-xl font-bold">{member.name}</h3>
-          <p className="mt-2 text-sm text-gray-700 text-center">{member.more_info}</p>
+          <p className="font-raleway mt-2 text-sm text-gray-700 text-center">Class of {member.year}</p>
         </div>
       </div>
     </div>
