@@ -1,11 +1,8 @@
-// Helper Functions used in the application
-import fs from 'fs';
-import path from 'path';
-import { type BoardMember } from './interfaces';
+import React from "react";
+import { ReactElement, ComponentType } from "react";
 
-export const getBoardMembers = (): BoardMember[] => {
-    const filePath = path.join(process.cwd(), 'data', 'board_members.json');
-    const jsonData = fs.readFileSync(filePath, 'utf-8');
-    const boardMembers: BoardMember[] = JSON.parse(jsonData);
-    return boardMembers;
+export const renderSkeletons = (count: number, Component: ComponentType): ReactElement[] => {
+  return Array(count)
+    .fill(0)
+    .map((_, index) => React.createElement(Component, { key: index }));
 };

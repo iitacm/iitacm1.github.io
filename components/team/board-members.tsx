@@ -1,19 +1,23 @@
+"use client";
+import useSWR from "swr";
 import Link from "next/link";
 import Image from "next/image";
-// import { useState } from "react";
-import { getBoardMembers } from "@/lib/functions";
+import { useState } from "react";
 import { BoardMember, TeamCategory } from "@/lib/interfaces";
+import { renderSkeletons } from "@/lib/functions";
+import { BoardMemberSkeleton } from "./board-member-skeleton";
+import { BoardMemberModal } from "@/components/team/board-member-modal";
 import { Button } from "@/components/ui/button";
+import { Skeleton } from "@/components/ui/skeleton";
 import { TbBrandLinkedin } from "react-icons/tb";
 import { TwitterSVG, InstagramSVG2, GitHubSVG, PortfolioSVG } from "@/app/svgs";
-// import { BoardMemberModal } from "./board-member-modal";
 
-const BoardMembers = () => {
-    const boardMembers: BoardMember[] = getBoardMembers();
+const BoardMembers = ()  => {
+    const fetcher = (url: string) => fetch(url).then((res) => res.json());
+    const { data, error, isLoading } = useSWR<BoardMember[]>("/api/board-members", fetcher);
+    const boardMembers = data || [];
     const categories: TeamCategory[] = ["Leadership Team", "Operations Team", "Technical Team"];
-    
-    // State for the selected member to show in the modal
-    // const [selectedMember, setSelectedMember] = useState<BoardMember | null>(null);
+    const [selectedMember, setSelectedMember] = useState<BoardMember | null>(null);
 
     const renderMembersByCategory = (category: string) => {
         return boardMembers
@@ -55,20 +59,42 @@ const BoardMembers = () => {
                             )}
                         </div>
                         <div>
-                            {/* <Button
+                            <Button
                             variant="default"
                             className="text-sm bg-gray text-background hover:bg-fontcolor"
-                            onClick={() => setSelectedMember(member)}
+                            onClick={() => setSelectedMember && setSelectedMember(member)}
                             >
                             More Info
-                            </Button> */}
-                            <Button variant="default" className="text-sm bg-gray text-background hover:bg-fontcolor">More Info</Button>
+                            </Button>
                         </div>
                     </div>
                 </div>
             </div>
         ));
     };
+
+    if (isLoading) {
+        return (
+            <>
+            {categories.map((category) => (
+                <div key={category} className="mb-24">
+                <Skeleton className="h-8 w-32 mb-8" /> {/* Category title skeleton */}
+                <div className="board-members grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3 lg:gap-12">
+                    {renderSkeletons(3, BoardMemberSkeleton)} {/* Render 3 skeletons per category */}
+                </div>
+                </div>
+            ))}
+            </>
+        )
+    }
+
+    if (error) {
+        return (
+            <div className="flex flex-col items-center justify-center h-screen">
+                <h1 className="text-3xl text-fontcolor">Oops. Still fixing things up... <Link href="/" className="pb-px border-b border-accent-color-primary text-accent-color-primary">Go Back Home</Link></h1>
+            </div>
+        );
+    }
 
     return(
         <>
@@ -82,12 +108,11 @@ const BoardMembers = () => {
                     </div>
                 ))
             }
-
-            {/* {
+            {
                 selectedMember && (
                     <BoardMemberModal member={selectedMember} onClose={() => setSelectedMember(null)} />
                 )
-            } */}
+            }
         </>
     );
 };
