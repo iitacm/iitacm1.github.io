@@ -9,7 +9,9 @@ import { BoardMemberSkeleton } from "./board-member-skeleton";
 import { BoardMemberModal } from "@/components/team/board-member-modal";
 import { Button } from "@/components/ui/button";
 import { Skeleton } from "@/components/ui/skeleton";
-import { TbBrandLinkedin } from "react-icons/tb";
+//import { TbBrandLinkedin } from "react-icons/tb";
+import { PiLinkedinLogoLight } from "react-icons/pi";
+// import { PiLinkedinLogoThin } from "react-icons/pi";
 import { TwitterSVG, InstagramSVG2, GitHubSVG, PortfolioSVG } from "@/app/svgs";
 
 const BoardMembers = ()  => {
@@ -23,38 +25,39 @@ const BoardMembers = ()  => {
         return boardMembers
         .filter((member) => member.category === category)
         .map((member) => (
-            <div key={member.name} className="mx-auto md:mx-0 h-80 w-3/4">
-                <div className="h-3/4 w-full">
+            <div key={member.name} className="mx-auto md:mx-0 min-h-80 lg:h-80 w-3/4">
+                <div className="h-96 md:h-3/4 w-full">
                     <Image src={member.picture} width={300} height={400} className="w-full h-full object-cover" alt="Team Member" />
                 </div>
                 <div className="flex flex-col mt-2">
                     <h3 className="text-light-red text-lg">{member.position}</h3>
                     <p className="text-sm text-gray">{member.name}</p>
-                    <div className="mt-px text-sm flex justify-between w-full items-center">
+                    <div className="mt-2 text-sm flex justify-between w-full items-center">
                         <div className="socials flex items-center gap-2">
                             {member.socials.linkedin && (
                                 <Link href={member.socials.linkedin} target="_blank" className="text-fontcolor">
-                                    <TbBrandLinkedin className="w-6 h-6" />
+                                    {/* <TbBrandLinkedin className="w-8 h-8" /> */}
+                                    <PiLinkedinLogoLight className="w-8 h-8 text-fontcolor" />
                                 </Link>
                             )}
                             {member.socials.twitter && (
                                 <Link href={member.socials.twitter} target="_blank" className="text-fontcolor">
-                                    <TwitterSVG className="w-6 h-6" />
+                                    <TwitterSVG className="w-8 h-8 text-fontcolor" />
                                 </Link>
                             )}
                             {member.socials.instagram && (
                                 <Link href={member.socials.instagram} target="_blank" className="text-fontcolor">
-                                    <InstagramSVG2 className="w-6 h-6" />
+                                    <InstagramSVG2 className="w-8 h-8 text-fontcolor" />
                                 </Link>
                             )}
                             {member.socials.portfolio && (
                                 <Link href={member.socials.portfolio} target="_blank" className="text-fontcolor">
-                                    <PortfolioSVG className="w-6 h-6" />
+                                    <PortfolioSVG className="w-8 h-8 text-fontcolor" />
                                 </Link>
                             )}
                             {member.socials.github && (
                                 <Link href={member.socials.github} target="_blank" className="text-fontcolor">
-                                    <GitHubSVG className="w-6 h-6" />
+                                    <GitHubSVG className="w-8 h-8 text-fontcolor" />
                                 </Link>
                             )}
                         </div>
