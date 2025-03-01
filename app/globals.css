@@ -12,6 +12,16 @@ body {
 }
 
 
+.crystyal-style-list > li {
+  font-size: 1.2em;
+  list-style-image: url('/diamond.svg');
+}
+
+.crystyal-style-list > li::marker{
+  font-size: 3.6em;
+  line-height: .1;
+}
+
 @layer base {
   :root {
     --font-color: #1E1E1E;
