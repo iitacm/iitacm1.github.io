@@ -5,7 +5,9 @@ import { formatEventDate } from "@/lib/utils"
 import { AddToCalendar } from "./add-to-calendar"
 import Link from "next/link"
 
-const upcomingEvents: Event[] = [
+const upcomingEvents: Event[] = []
+
+const pastEvents: Event[] = [
   {
     name: "ICPC Event - Crack the Code - 2",
     description: "Following our successful Introduction to Cracking Coding Problems session, we are excited to bring you Part 2 of our ICPC Coding Workshop, featuring Professor Michael Lee. In this session, we\’ll dive deeper into competitive programming techniques, covering essential problem-solving strategies, algorithmic thinking, and hands-on coding challenges.",
@@ -15,10 +17,7 @@ const upcomingEvents: Event[] = [
     place: "SB 111",
     timezone: "America/Chicago",
     link: "https://www.linkedin.com/posts/acm-iit_competitiveprogramming-icpc-codingchallenges-activity-7299986111169187841-Zjrp?utm_source=share&utm_medium=member_desktop&rcm=ACoAACEEUYEBfR38tezSmfZ_VCQFeUnQkTa7YhY"
-  }
-]
-
-const pastEvents: Event[] = [
+  },
   {
     name: "Career Elevation Workshop",
     date: "2025-02-08 11:30",
@@ -28,7 +27,7 @@ const pastEvents: Event[] = [
     place: "Kaplan Tellabs",
     timezone: "America/Chicago",
     link: null
-  },
+  }
 ]
 
 export function EventsTabs() {
