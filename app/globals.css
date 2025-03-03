@@ -12,6 +12,16 @@ body {
 }
 
 
+.crystyal-style-list > li {
+  font-size: 1.2em;
+  list-style-image: url('/diamond.svg');
+}
+
+.crystyal-style-list > li::marker{
+  font-size: 3.6em;
+  line-height: .1;
+}
+
 @layer base {
   :root {
     --font-color: #1E1E1E;
@@ -84,6 +94,17 @@ body {
 @layer base {
   * {
     @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
   }
   body {
     @apply bg-background text-foreground;

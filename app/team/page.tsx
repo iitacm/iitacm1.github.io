@@ -1,9 +1,9 @@
 import { Header } from "@/components/ui/page-header";
 import BoardMembers from "@/components/team/board-members";
 
-
 const Page = () => {
     const teamHeaderText = `Our dedicated team is committed to fostering innovation, collaboration, and a love for technology within the IIT community. From organizing impactful events to supporting members\’ growth and building a vibrant network of tech enthusiasts.`;
+    
     return(
         <>
         {/* Top left Blurred Circle */}
