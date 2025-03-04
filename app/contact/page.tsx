@@ -17,13 +17,13 @@ const Page = () => {
               <h2 className="text-5xl lg:text-6xl mb-4">Anytime.</h2>
             </div>
             <p className="text-lg">
-              Reach Out to the ACM Board—We're Here to Help!
+              Reach Out to the ACM Board—We&apos;re Here to Help!
             </p>
           </div>
 
           {/* Right Section */}
           <div className="sm:min-w-[300px] lg:min-w-[400px] xl:min-w-[500px]">
-            <div className="bg-muted-foreground rounded-3xl p-6">
+            <div className="bg-lightGray rounded-3xl p-6">
               <ul>
                 <li className="mb-14">
                   <Link
