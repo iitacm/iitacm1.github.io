@@ -11,25 +11,24 @@ body {
   border-bottom: 1px solid var(--accent-color);
 }
 
-
 .crystyal-style-list > li {
   font-size: 1.2em;
-  list-style-image: url('/diamond.svg');
+  list-style-image: url("/diamond.svg");
 }
 
-.crystyal-style-list > li::marker{
+.crystyal-style-list > li::marker {
   font-size: 3.6em;
-  line-height: .1;
+  line-height: 0.1;
 }
 
 @layer base {
   :root {
-    --font-color: #1E1E1E;
-    --background-color: #FFF5F5;
-    --accent-color: #CC0000;
+    --font-color: #1e1e1e;
+    --background-color: #fff5f5;
+    --accent-color: #cc0000;
     --accent-color-2: #970000;
-    --light-red: #D5372B;
-    --gray: #7E7E7E;
+    --light-red: #d5372b;
+    --gray: #7e7e7e;
     --background: 0 0% 100%;
     --foreground: 0 0% 3.9%;
     --card: 0 0% 100%;
@@ -56,7 +55,7 @@ body {
     --chart-4: 43 74% 66%;
     --chart-5: 27 87% 67%;
   }
- 
+
   .dark {
     --background: 0 0% 3.9%;
     --foreground: 0 0% 98%;
@@ -99,8 +98,6 @@ body {
     @apply bg-background text-foreground;
   }
 }
-
-
 
 @layer base {
   * {
