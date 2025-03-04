@@ -23,7 +23,7 @@ const Page = () => {
 
           {/* Right Section */}
           <div className="sm:min-w-[300px] lg:min-w-[400px] xl:min-w-[500px]">
-            <div className="bg-lightGray rounded-3xl p-6">
+            <div className="bg-zinc-300 rounded-3xl p-6">
               <ul>
                 <li className="mb-14">
                   <Link

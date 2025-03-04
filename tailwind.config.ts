@@ -22,7 +22,6 @@ export default {
         },
         "light-red": "var(--light-red)",
         gray: "var(--gray)",
-        lightGray: "var(--light-gray)",
         card: {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
