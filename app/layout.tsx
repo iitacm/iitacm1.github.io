@@ -2,7 +2,6 @@ import { Raleway } from "next/font/google";
 import localFont from "next/font/local";
 import type { Metadata } from "next";
 import "./globals.css";
-import { Footer } from "@/components/ui/footer";
 
 export const metadata: Metadata = {
   title: "ACM Illinois Tech",
