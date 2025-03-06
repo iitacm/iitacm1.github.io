@@ -5,6 +5,8 @@
         "more_info": "Jason is a great man I believe.",
         "picture": "/assets/acm_pictures/team/jason.jpg",
         "year": "2026",
+        "major": "B.S. Computer Science",
+        "minor": "",
         "socials": {
             "linkedin": "https://www.linkedin.com/in/jzheng39/"
         },
@@ -16,6 +18,8 @@
         "more_info": "She is very nice.",
         "picture": "/assets/acm_pictures/team/jiya.jpg",
         "year": "2026",
+        "major": "B.S. Computer Science",
+        "minor": "Finance & Statistics",
         "socials": {
             "linkedin": "https://www.linkedin.com/in/jiyarathi"
         },
@@ -27,6 +31,8 @@
         "more_info": "Good listener.",
         "picture": "/assets/acm_pictures/team/lorena.jpg",
         "year": "2026",
+        "major": "B.S. Computer Science",
+        "minor": "",
         "socials": {
             "linkedin": "https://www.linkedin.com/in/lorenaramirez1"
         },
@@ -38,6 +44,8 @@
         "more_info": "He is too cheerful.",
         "picture": "/assets/acm_pictures/team/harish.jpg",
         "year": "2026",
+        "major": "M.A.S. Data Science",
+        "minor": "",
         "socials": {
             "linkedin": "https://www.linkedin.com/in/harish-namasivayam-muthuswamy"
         },
@@ -49,6 +57,8 @@
         "more_info": "Good teacher.",
         "picture": "/assets/acm_pictures/team/nick.png",
         "year": "2026",
+        "major": "B.S. Artificial Intelligence, M.S. Artificial Intelligence",
+        "minor": "",
         "socials": {
             "linkedin": "https://www.linkedin.com/in/kaungmyatnaing9",
             "portfolio": "https://kaungmyatnaing.com"
@@ -61,6 +71,8 @@
         "more_info": "He is very good at coding.",
         "picture": "/assets/acm_pictures/team/edwin.jpg",
         "year": "2027",
+        "major": "B.S. Computer Science",
+        "minor": "Cybersecurity & Business",
         "socials": {
             "linkedin": "https://www.linkedin.com/in/edwin-huallpa-346868281",
             "instagram": "https://www.instagram.com/hl7joao"
@@ -73,6 +85,8 @@
         "more_info": "Good Designer.",
         "picture": "/assets/acm_pictures/team/vijay.jpg",
         "year": "2026",
+        "major": "M.A.S. Computer Science",
+        "minor": "",
         "socials": {
             "linkedin": "http://linkedin.com/in/vijay-ponugoti"
         },
@@ -84,6 +98,8 @@
         "more_info": "Good Designer.",
         "picture": "/assets/acm_pictures/team/krishna_new.jpg",
         "year": "2026",
+        "major": "M.S. Computer Science",
+        "minor": "",
         "socials": {
             "linkedin": "https://www.linkedin.com/in/krishnarams"
         },
@@ -95,6 +111,8 @@
         "more_info": "Very good coder.",
         "picture": "/assets/acm_pictures/team/govind.png",
         "year": "2026",
+        "major": "M.S. Computer Science",
+        "minor": "",
         "socials": {
             "linkedin": "https://www.linkedin.com/in/govind-kurapati",
             "portfolio": "https://govind-kurapati.com"
@@ -107,6 +125,8 @@
         "more_info": "lol.",
         "picture": "/assets/acm_pictures/team/ashraf.jpg",
         "year": "2026",
+        "major": "M.S. Information Technology & Management",
+        "minor": "",
         "socials": {
             "linkedin": "http://linkedin.com/in/chirix33",
             "github": "https://www.github.com/chirix33",
@@ -120,6 +140,8 @@
         "more_info": "A Community Engager...",
         "picture": "/assets/acm_pictures/team/tashvi.jpg",
         "year": "2026",
+        "major": "M.S. Computer Science",
+        "minor": "",
         "socials": {
             "instagram": "https://www.instagram.com/tashviii"
         },
@@ -131,6 +153,8 @@
         "more_info": "So patient and kind!",
         "picture": "/assets/acm_pictures/team/emma.jpg",
         "year": "2026",
+        "major": "B.S. Computer Science, M.S. Artificial Intelligence",
+        "minor": "",
         "socials": {
             "linkedin": "https://www.linkedin.com/in/emma-diamon"
         },
@@ -142,6 +166,8 @@
         "more_info": "A Graphic Designer",
         "picture": "/assets/acm_pictures/team/jovan.png",
         "year": "2026",
+        "major": "M.S. Computer Science",
+        "minor": "",
         "socials": {
             "linkedin": "https://www.linkedin.com/in/jjovantitus"
         },
@@ -153,6 +179,8 @@
         "more_info": "A Professional Developer",
         "picture": "/assets/acm_pictures/team/ananya.jpeg",
         "year": "2026",
+        "major": "M.A.S. Date Science",
+        "minor": "",
         "socials": {
             "linkedin": "https://www.linkedin.com/in/gayathri-ananya-175584174"
         },

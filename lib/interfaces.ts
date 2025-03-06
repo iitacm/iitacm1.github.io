@@ -25,6 +25,8 @@ export interface BoardMember {
     more_info: string;
     picture: string;
     year: string;
+    major: string;
+    minor?: string;
     socials: SocialLinks;
     category: TeamCategory;
 }

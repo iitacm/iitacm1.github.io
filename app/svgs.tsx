@@ -358,3 +358,27 @@ export const PortfolioSVG = ({ className } : { className: string }) => {
   </svg>
   );
 };
+
+
+export const ArrowRightSVG = (props: React.SVGProps<SVGSVGElement>) => {
+  return (
+    <svg
+      width="24px"
+      height="24px"
+      viewBox="0 0 24 24"
+      strokeWidth="1.5"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      color="#CC0000"
+      {...props}
+    >
+      <path
+        d="M3 12L21 12M21 12L12.5 3.5M21 12L12.5 20.5"
+        stroke="#CC0000"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  );
+};
