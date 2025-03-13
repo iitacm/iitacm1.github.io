@@ -21,11 +21,11 @@ const Home = () => {
 
       <header className="mt-24 px-8 text-background bg-[url('/assets/header_background_1.png')] bg-cover flex flex-col space-y-4 justify-center items-center w-full h-96 lg:px-24 lg:flex-row lg:h-screen lg:space-x-4 lg:space-y-0">
         <div className="w-full lg:w-1/3 lg:flex-1">
-          <h3 className="text-2xl lg:text-3xl">
+          <h3 className="text-2xl lg:text-3xl 2xl:text-4xl">
             Welcome to{" "}
             <span className="text-accent-color-primary">ACM IIT.</span>
           </h3>
-          <p className="font-raleway text-sm mt-2">
+          <p className="font-raleway text-sm mt-2 lg:text-md xl:text-lg">
             A vibrant community of tech enthusiasts through dyanmic events,
             engaging competitions, insightful seminars, and exciting
             opportunities to learn, grow and innovate.
@@ -51,10 +51,10 @@ const Home = () => {
           />
 
           <div className="w-full flex flex-col items-center mt-4 lg:w-1/2 lg:mt-0 lg:h-full">
-            <h2 className="text-lg text-center text-accent-color-primary">
+            <h2 className="text-lg 2xl:text-2xl text-center text-accent-color-primary">
               OUR EVENTS
             </h2>
-            <p className="font-raleway text-sm mt-2 flex-1">
+            <p className="font-raleway text-sm 2xl:text-2xl mt-2 flex-1">
               Stay ahead in the world of computing with ACM IIT&apos;s exciting
               events! From hands-on workshops and insightful tech talks to
               networking sessions and hackathons, we provide opportunities for
@@ -63,7 +63,7 @@ const Home = () => {
               computing journey.
             </p>
             <Link href="/events">
-              <Button variant="default" className="mt-4">
+              <Button variant="default" className="mt-4 2xl:text-lg 2xl:py-4">
                 ACM IIT EVENTS
                 <svg
                   width="36"
@@ -88,10 +88,10 @@ const Home = () => {
         {/* About Us */}
         <section className="flex flex-col items-center lg:flex-row lg:items-start justify-between lg:h-[500px] p-8 lg:p-24 gap-4">
           <div className="w-full flex flex-col items-center mt-4 lg:w-1/2 lg:mt-0 lg:h-full">
-            <h2 className="text-lg text-center text-accent-color-primary">
+            <h2 className="text-lg 2xl:text-2xl text-center text-accent-color-primary">
               ABOUT US
             </h2>
-            <p className="font-raleway text-sm mt-2 flex-1">
+            <p className="font-raleway text-sm 2xl:text-xl mt-2 flex-1">
               ACM IIT is the premier student chapter dedicated to advancing
               computing knowledge, fostering innovation, and building a thriving
               community of tech enthusiasts at Illinois Institute of Technology.
@@ -116,7 +116,7 @@ const Home = () => {
             alt="ACM's Little Stars"
           />
           <div className="w-full flex flex-col items-center mt-4 lg:mt-0 lg:h-full">
-            <h2 className="text-xl text-center">
+            <h2 className="text-2xl 2xl:text-3xl text-center">
               Building Connections, Inspiring Collaborations and Growing
               Together
             </h2>

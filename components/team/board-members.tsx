@@ -23,8 +23,8 @@ const BoardMembers = ()  => {
         return boardMembers
         .filter((member) => member.category === category)
         .map((member) => (
-            <div key={member.name} className="mx-auto md:mx-0 min-h-80 lg:h-80 w-3/4">
-                <div className="h-96 md:h-3/4 w-full">
+            <div key={member.name} className="mx-auto md:mx-0 min-h-80 w-3/4">
+                <div className="md:h-3/4 w-full">
                     <Image src={member.picture} width={300} height={400} className="w-full h-full object-cover" alt="Team Member" />
                 </div>
                 <div className="flex flex-col mt-2">
@@ -35,7 +35,7 @@ const BoardMembers = ()  => {
                             {member.socials.linkedin && (
                                 <Link href={member.socials.linkedin} target="_blank" className="text-fontcolor">
                                     {/* <TbBrandLinkedin className="w-8 h-8" /> */}
-                                    <PiLinkedinLogoLight className="w-8 h-8 text-fontcolor transition hover:text-light-red" />
+                                    <PiLinkedinLogoLight className="w-8 h-8 text-fontcolor transition" />
                                 </Link>
                             )}
                             {member.socials.twitter && (

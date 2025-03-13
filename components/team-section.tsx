@@ -14,7 +14,7 @@ teamMembers = boardMembers.filter((member) => member.category == "Leadership Tea
 export const TeamSection = () => {
   return (
     <section className="bg-background py-16 px-8 text-center">
-      <h2 className="text-2xl mb-6">Sneak peek of our Team</h2>
+      <h2 className="text-2xl xl:text-3xl mb-6">Sneak peek of our Team</h2>
 
       {/* Team Grid */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto max-h-80 overflow-y-hidden">

@@ -1,5 +1,6 @@
 import Link from "next/link";
-import { TbBrandDiscord, TbBrandLinkedin } from "react-icons/tb";
+import { TbBrandDiscord, TbBrandLinkedin  } from "react-icons/tb";
+import { IoLogoInstagram } from "react-icons/io5";
 import { Mail } from "lucide-react";
 
 const Page = () => {
@@ -25,7 +26,7 @@ const Page = () => {
           <div className="sm:min-w-[300px] lg:min-w-[400px] xl:min-w-[500px]">
             <div className="bg-zinc-300 rounded-3xl p-6">
               <ul>
-                <li className="mb-14">
+                <li className="mb-12">
                   <Link
                     href="mailto:acm@iit.edu"
                     target="_blank"
@@ -35,7 +36,7 @@ const Page = () => {
                     <span className="text-gray-800">acm@iit.edu</span>
                   </Link>
                 </li>
-                <li className="mb-14">
+                <li className="mb-12">
                   <Link
                     href="https://linkedin.com/company/acm-iit"
                     target="_blank"
@@ -47,7 +48,7 @@ const Page = () => {
                     </span>
                   </Link>
                 </li>
-                <li>
+                <li className="mb-12">
                   <Link
                     href="https://discord.gg/yUjWpA48"
                     target="_blank"
@@ -57,6 +58,16 @@ const Page = () => {
                     <span className="text-gray-800">
                       https://discord.gg/yUjWpA48
                     </span>
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="https://instagram.com/acm_iit"
+                    target="_blank"
+                    className="flex items-center rounded-md p-3 bg-background"
+                  >
+                    <IoLogoInstagram className="w-7 h-7 mr-2" />
+                    <span className="text-gray-800">https://instagram.com/acm_iit</span>
                   </Link>
                 </li>
               </ul>
