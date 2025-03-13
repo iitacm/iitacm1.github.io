@@ -21,13 +21,15 @@ export const BoardMemberModal: React.FC<BoardMemberModalProps> = ({ member, onCl
           <CloseSVG />
         </button>
         <div className="flex flex-col items-center">
-          <Image
-            src={member.picture}
-            width={150}
-            height={150}
-            className="rounded-full object-cover"
-            alt={member.name}
-          />
+          <div className="h-[150px] w-[150px] rounded-full overflow-hidden relative">
+            <Image
+              src={member.picture}
+              width={150}
+              height={150}
+              className="object-cover"
+              alt={member.name}
+            />
+          </div>
           <h3 className="mt-4 text-xl font-bold">{member.name}</h3>
           <p className="font-raleway mt-2 text-sm text-gray-700 text-center">Class of {member.year}</p>
           <p className="font-raleway mt-2 text-sm text-gray-700 text-center">Major: {member.major}</p>
