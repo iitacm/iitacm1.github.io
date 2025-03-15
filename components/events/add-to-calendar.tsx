@@ -1,14 +1,14 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { GoogleSVG } from "@/app/svgs";
+import { GoogleSVG, MicrosoftSVG } from "@/app/svgs";
 import { Event } from "@/lib/interfaces";  
-import { googleFormatDate } from "@/lib/utils";
+import { googleFormatDate, formatToOutlook } from "@/lib/utils";
 
 export const AddToCalendar = (event : Event) => {
     const { name: title, description, date: startTime, endDate: endTime, location, timezone } = event;
     const [googleCalendarUrl, setGoogleCalendarUrl] = useState("");
-    // const [outlookCalendarUrl, setOutlookCalendarUrl] = useState("");
+    const [outlookCalendarUrl, setOutlookCalendarUrl] = useState("");
 
     useEffect(() => {
         if (startTime && endTime) {
@@ -18,17 +18,17 @@ export const AddToCalendar = (event : Event) => {
                 location
             )}&dates=${googleFormatDate(startTime, timezone)}/${googleFormatDate(endTime, timezone)}&ctz=${timezone}`;
             
-            // const outlookformattedUrl = `https://outlook.live.com/calendar/0/deeplink/compose?path=/calendar/action/compose&rru=addevent&startdt=${encodeURIComponent(
-            //     outlookFormatDate(startTime, timezone)
-            // )}&enddt=${encodeURIComponent(
-            //     outlookFormatDate(endTime, timezone)
-            // )}&subject=${encodeURIComponent(title)}&location=${encodeURIComponent(
-            //     location
-            // )}&body=${encodeURIComponent(description)}`;
-            
+            const outlookformattedUrl = `https://outlook.live.com/calendar/0/deeplink/compose?path=/calendar/action/compose&rru=addevent&startdt=${encodeURIComponent(
+                formatToOutlook(startTime, timezone)
+            )}&enddt=${encodeURIComponent(
+                formatToOutlook(endTime, timezone)
+            )}&subject=${encodeURIComponent(title)}&location=${encodeURIComponent(
+                location
+            )}&body=${encodeURIComponent(description)}`;
+                    
 
             setGoogleCalendarUrl(googleformattedUrl);
-            // setOutlookCalendarUrl(outlookformattedUrl);
+            setOutlookCalendarUrl(outlookformattedUrl);
         }
       }, [title, description, location, startTime, endTime, timezone]);
 
@@ -45,12 +45,12 @@ export const AddToCalendar = (event : Event) => {
             </a>
 
             {/* Outlook Calendar Button */}
-            {/* <a href={outlookCalendarUrl} target="_blank" rel="noopener noreferrer">
+            <a href={outlookCalendarUrl} target="_blank" rel="noopener noreferrer">
                 <button className="flex items-center gap-2 text-sm bg-slate-200 text-fontcolor px-2 py-1 rounded-md">
                     <MicrosoftSVG className="w-4 h-4" />
                     Add to Outlook
                 </button>
-            </a> */}
+            </a>
         </div>
     );
 };

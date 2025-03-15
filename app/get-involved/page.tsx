@@ -36,9 +36,9 @@ const Page = () => {
                 <div className="z-[9] flex flex-col gap-8 font-raleway bg-fontcolor text-background rounded-lg p-8 w-full md:w-1/2">
                     <h2 className="text-2xl text-center">How to Join ACM IIT</h2>
                     <p className="text-sm font-lighter">
-                    Share a few details about yourself, and we’ll guide you through the next steps to officially become part of our chapter. Whether you&apos;re looking to learn, network, or lead, there&apos;s a place for you here. Let’s build something great together!
+                    Share a few details about yourself, and we’ll let you be a part of us. Whether you&apos;re looking to learn, network, or lead, there&apos;s a place for you here. Let’s build something great together!
                     </p>
-                    <Link href="/get-involved/join-acm" className="text-center">
+                    <Link href="https://forms.gle/J3kGK8JLsKDTyPCg7" className="text-center">
                         <button className="font-raleway cursor-pointer bg-accent-color-primary text-background py-4 px-8 w-full md:w-1/2 mx-auto transition duration-300 hover:opacity-80">
                             Join ACM IIT
                         </button>
