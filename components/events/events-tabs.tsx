@@ -5,18 +5,7 @@ import { formatEventDate } from "@/lib/utils"
 import { AddToCalendar } from "./add-to-calendar"
 import Link from "next/link"
 
-const upcomingEvents: Event[] = [
-  {
-    name: "ICPC Event - Crack the Code - 2",
-    description: "Following our successful Introduction to Cracking Coding Problems session, we are excited to bring you Part 2 of our ICPC Coding Workshop, featuring Professor Michael Lee. In this session, we\’ll dive deeper into competitive programming techniques, covering essential problem-solving strategies, algorithmic thinking, and hands-on coding challenges.",
-    date: "2025-03-27 14:45",
-    endDate: "2025-03-27 17:00",
-    location: "Stuart Building, Chicago, IL",
-    place: "SB 111",
-    timezone: "America/Chicago",
-    link: "https://www.linkedin.com/posts/acm-iit_competitiveprogramming-icpc-codingchallenges-activity-7299986111169187841-Zjrp?utm_source=share&utm_medium=member_desktop&rcm=ACoAACEEUYEBfR38tezSmfZ_VCQFeUnQkTa7YhY"
-  }
-]
+const upcomingEvents: Event[] = []
 
 const pastEvents: Event[] = [
   {
