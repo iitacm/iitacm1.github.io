@@ -9,6 +9,16 @@ const upcomingEvents: Event[] = []
 
 const pastEvents: Event[] = [
   {
+    name: "Scarlet Hacks 2025 – Innovate, Build, Compete",
+    description: "a student-led hackathon designed to bring together problem solvers, developers, and innovators.",
+    date: "2025-04-05 08:00",
+    endDate: "2025-04-06 14:30",
+    location: "Stuart Building, Chicago, IL",
+    place: "SB 107",
+    timezone: "America/Chicago",
+    link: "https://www.linkedin.com/posts/acm-iit_scarlethacks-hackathon-innovation-activity-7310521446995214336-IFXH?utm_source=share&utm_medium=member_desktop&rcm=ACoAACEEUYEBfR38tezSmfZ_VCQFeUnQkTa7YhY"
+  },
+  {
     name: "ICPC Event - Crack the Code - 2",
     description: "Following our successful Introduction to Cracking Coding Problems session, we are excited to bring you Part 2 of our ICPC Coding Workshop, featuring Professor Michael Lee. In this session, we\’ll dive deeper into competitive programming techniques, covering essential problem-solving strategies, algorithmic thinking, and hands-on coding challenges.",
     date: "2025-02-27 12:45",
