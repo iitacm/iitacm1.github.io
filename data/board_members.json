@@ -185,5 +185,18 @@
             "linkedin": "https://www.linkedin.com/in/gayathri-ananya-175584174"
         },
         "category": "Operations Team"
+    },
+    {
+        "name": "Ryan Van",
+        "position": "Sponsorhip Chair",
+        "more_info": "The Sponsorship Chair of ACM IIT",
+        "picture": "/assets/acm_pictures/team/ryan.jpeg",
+        "year": "2026",
+        "major": "B.S. Computer Science",
+        "minor": "Statistics",
+        "socials": {
+            "linkedin": "https://www.linkedin.com/in/ryanvan03"
+        },
+        "category": "Leadership Team"
     }
 ]
