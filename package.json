@@ -1,5 +1,5 @@
 {
-  "name": "next-15-tailwind-shadcn-starter-template",
+  "name": "acm-illinois-tech-website",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -15,6 +15,7 @@
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "date-fns-tz": "^3.2.0",
+    "dotenv": "^16.5.0",
     "embla-carousel-autoplay": "^8.5.2",
     "embla-carousel-react": "^8.5.2",
     "iconoir": "^7.10.1",
