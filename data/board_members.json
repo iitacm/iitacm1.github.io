@@ -1,20 +1,7 @@
 [
     {
-        "name": "Jason Zheng",
-        "position": "President",
-        "more_info": "Jason is a great man I believe.",
-        "picture": "/assets/acm_pictures/team/jason.jpg",
-        "year": "2026",
-        "major": "B.S. Computer Science",
-        "minor": "",
-        "socials": {
-            "linkedin": "https://www.linkedin.com/in/jzheng39/"
-        },
-        "category": "Leadership Team"
-    },
-    {
         "name": "Jiya Sheetal Rathi",
-        "position": "Vice President",
+        "position": "President",
         "more_info": "She is very nice.",
         "picture": "/assets/acm_pictures/team/jiya.jpg",
         "year": "2026",

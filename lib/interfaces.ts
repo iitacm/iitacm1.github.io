@@ -1,12 +1,22 @@
+// Database Event interface matching the exact schema
 export interface Event {
-    name: string; // Event title
-    description: string; // Event details
-    date: string; // Event start date
-    endDate: string; // Event end date
-    location: string; // Event location
-    place: string; // Event place
-    timezone: string; // Event timezone
-    link: string | null; // Event link
+    id?: number; // SERIAL PRIMARY KEY (optional for new events)
+    name: string; // TEXT NOT NULL - Event title
+    description: string; // TEXT - Event details
+    start_time: string; // TIMESTAMP NOT NULL - Event start date/time
+    end_time: string; // TIMESTAMP NOT NULL - Event end date/time  
+    location: string; // TEXT - Event location
+    place: string; // TEXT - Event place/room
+    timezone: string; // TEXT NOT NULL - Event timezone
+    link: string | null; // TEXT - Event link (nullable)
+}
+
+// Helper type for event status based on dates
+export type EventStatus = 'upcoming' | 'ongoing' | 'past';
+
+// Extended interface for events with computed status
+export interface EventWithStatus extends Event {
+    status: EventStatus;
 }
 
 interface SocialLinks {

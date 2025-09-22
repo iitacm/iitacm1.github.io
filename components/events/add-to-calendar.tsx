@@ -6,7 +6,7 @@ import { Event } from "@/lib/interfaces";
 import { googleFormatDate, formatToOutlook } from "@/lib/utils";
 
 export const AddToCalendar = (event : Event) => {
-    const { name: title, description, date: startTime, endDate: endTime, location, timezone } = event;
+    const { name: title, description, start_time: startTime, end_time: endTime, location, timezone } = event;
     const [googleCalendarUrl, setGoogleCalendarUrl] = useState("");
     const [outlookCalendarUrl, setOutlookCalendarUrl] = useState("");
 
