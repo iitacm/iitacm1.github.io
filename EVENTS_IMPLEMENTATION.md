@@ -8,9 +8,16 @@ This implementation integrates your events system with the database table struct
 
 ### Updated Event Interface
 
-The `Event` interface in `lib/interfaces.ts` now perfectly matches your database schema:
+The `Event` interface in `lib/interfaces.ts` now perfectly matches your database schema including the new media field:
 
 ```typescript
+// Media item interface for event media
+export interface EventMedia {
+    type: 'image' | 'video';
+    url: string;
+    caption?: string;
+}
+
 export interface Event {
     id?: number; // SERIAL PRIMARY KEY (optional for new events)
     name: string; // TEXT NOT NULL - Event title
@@ -21,6 +28,7 @@ export interface Event {
     place: string; // TEXT - Event place/room
     timezone: string; // TEXT NOT NULL - Event timezone
     link: string | null; // TEXT - Event link (nullable)
+    media: EventMedia[] | null; // JSON - Event media (images/videos from Vercel Blob)
 }
 ```
 
@@ -72,12 +80,27 @@ The `useEvents` hook provides:
 
 ### EventsTabs Component
 
-Updated to use the new schema:
+Enhanced with modern UI and modal functionality:
 - Uses `useEvents` hook for data fetching
+- Beautiful card-based layout with hover effects
+- "More Info" buttons that open detailed event modals
 - Displays loading spinner during data fetch
 - Shows error states gracefully
 - Uses proper database field names (`start_time`, `end_time`)
 - Dynamic tab defaulting based on available events
+
+### EventModal Component (`components/events/event-modal.tsx`)
+
+**New comprehensive event modal with:**
+- **Rich Media Carousel**: User-controlled carousel for images and videos
+- **Detailed Event Information**: Full description, time, location, duration
+- **Beautiful UI**: Modern design with smooth animations and transitions
+- **Responsive Design**: Works perfectly on mobile and desktop
+- **Keyboard Navigation**: ESC key to close, arrow keys for carousel
+- **Video Support**: Native video player with controls for video media
+- **Image Captions**: Optional captions for media items
+- **External Links**: Direct links to event resources
+- **Accessibility**: Proper ARIA labels and keyboard navigation
 
 ### AddToCalendar Component
 
@@ -88,21 +111,33 @@ Updated to work with new field names:
 
 ## Data Structure
 
-### Sample Events Data
+### Event Data Structure
 
-The `data/events.json` file now contains events in the correct database format:
+Events are now stored in the database with the complete schema including media:
 
 ```json
 {
   "id": 1,
-  "name": "Event Name",
-  "description": "Event description",
-  "start_time": "2025-04-05 08:00",
-  "end_time": "2025-04-06 14:30",
+  "name": "AI Workshop: Future of Machine Learning",
+  "description": "Join us for an immersive workshop exploring cutting-edge AI developments...",
+  "start_time": "2025-04-15 14:00",
+  "end_time": "2025-04-15 17:00",
   "location": "Stuart Building, Chicago, IL",
-  "place": "SB 107",
+  "place": "SB 200",
   "timezone": "America/Chicago",
-  "link": "https://example.com"
+  "link": "https://example.com/ai-workshop",
+  "media": [
+    {
+      "type": "image",
+      "url": "https://your-vercel-blob-url/image1.jpg",
+      "caption": "Workshop setup and presentation area"
+    },
+    {
+      "type": "video", 
+      "url": "https://your-vercel-blob-url/video1.mp4",
+      "caption": "Event highlights reel"
+    }
+  ]
 }
 ```
 
@@ -205,3 +240,102 @@ The implementation has been tested with:
 - Component rendering (✓ No errors)
 
 All events will now automatically be categorized as past or upcoming based on their actual dates, providing a dynamic and always-current events display.
+
+## 🎉 New Event Modal Features
+
+### Enhanced User Experience
+
+**Modern Event Cards:**
+- Clean card-based design with subtle shadows and hover effects
+- Truncated descriptions with "More Info" buttons for details
+- Better visual hierarchy with improved typography
+- Responsive layout that works on all screen sizes
+
+**Rich Event Modals:**
+- **Media Carousel**: Beautiful user-controlled carousel for event photos and videos
+- **Video Support**: Native HTML5 video player with full controls
+- **Image Captions**: Optional captions for better context
+- **Detailed Information**: Complete event details including duration calculations
+- **Interactive Elements**: External links and calendar integration
+- **Smooth Animations**: Elegant transitions and hover effects
+
+**Accessibility & UX:**
+- Keyboard navigation (ESC to close, arrows for carousel)
+- Proper focus management and ARIA labels
+- Click-outside-to-close functionality
+- Mobile-optimized touch interactions
+- Loading states and error handling
+
+### Media Integration with Vercel Blob
+
+The new `media` field in your database stores an array of media objects:
+
+```typescript
+interface EventMedia {
+  type: 'image' | 'video';
+  url: string;        // Vercel Blob URL
+  caption?: string;   // Optional caption
+}
+```
+
+**Features:**
+- **Images**: Responsive images with Next.js optimization
+- **Videos**: HTML5 video player with controls and metadata preloading
+- **Captions**: Overlay captions for better context
+- **Multiple Media**: Carousel navigation for multiple items
+- **User Control**: No autoplay - users control their experience
+
+### Database Schema Updates
+
+Your `events` table now includes:
+```sql
+ALTER TABLE events ADD COLUMN media JSON;
+```
+
+The media field stores JSON arrays like:
+```json
+[
+  {
+    "type": "image",
+    "url": "https://your-blob-url.vercel-storage.app/image.jpg",
+    "caption": "Event setup"
+  },
+  {
+    "type": "video", 
+    "url": "https://your-blob-url.vercel-storage.app/video.mp4",
+    "caption": "Event highlights"
+  }
+]
+```
+
+### Usage Examples
+
+**Creating Events with Media:**
+```typescript
+const eventWithMedia = {
+  name: "Tech Workshop 2025",
+  description: "Amazing workshop...",
+  start_time: "2025-04-15 14:00",
+  end_time: "2025-04-15 17:00", 
+  location: "Stuart Building",
+  place: "SB 200",
+  timezone: "America/Chicago",
+  link: "https://example.com",
+  media: [
+    {
+      type: "image",
+      url: "https://blob.vercel-storage.app/workshop-setup.jpg",
+      caption: "Workshop setup"
+    }
+  ]
+};
+```
+
+**Modal Features:**
+- Automatic carousel for multiple media items
+- Video controls (play, pause, volume, fullscreen)
+- Responsive design for mobile and desktop
+- Smooth transitions between media items
+- Caption overlays for context
+
+This creates an intuitive, engaging experience where users can explore event details and media in a beautiful, accessible interface!

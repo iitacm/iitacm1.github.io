@@ -1,3 +1,10 @@
+// Media item interface for event media
+export interface EventMedia {
+    type: 'image' | 'video';
+    url: string;
+    caption?: string;
+}
+
 // Database Event interface matching the exact schema
 export interface Event {
     id?: number; // SERIAL PRIMARY KEY (optional for new events)
@@ -9,6 +16,7 @@ export interface Event {
     place: string; // TEXT - Event place/room
     timezone: string; // TEXT NOT NULL - Event timezone
     link: string | null; // TEXT - Event link (nullable)
+    media: EventMedia[] | null; // JSON - Event media (images/videos from Vercel Blob)
 }
 
 // Helper type for event status based on dates

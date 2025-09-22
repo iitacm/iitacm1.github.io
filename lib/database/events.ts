@@ -17,7 +17,8 @@ export async function getAllEvents(): Promise<Event[]> {
       location,
       place,
       timezone,
-      link
+      link,
+      media
     FROM events
     ORDER BY start_time ASC
   `;
@@ -38,7 +39,8 @@ export async function getEventById(id: number): Promise<Event | null> {
       location,
       place,
       timezone,
-      link
+      link,
+      media
     FROM events
     WHERE id = ${id}
   `;
@@ -58,7 +60,8 @@ export async function createEvent(eventData: Omit<Event, 'id'>): Promise<Event> 
       location, 
       place, 
       timezone, 
-      link
+      link,
+      media
     ) VALUES (
       ${eventData.name},
       ${eventData.description || ''},
@@ -67,7 +70,8 @@ export async function createEvent(eventData: Omit<Event, 'id'>): Promise<Event> 
       ${eventData.location || ''},
       ${eventData.place || ''},
       ${eventData.timezone},
-      ${eventData.link}
+      ${eventData.link},
+      ${JSON.stringify(eventData.media)}
     )
     RETURNING *
   `;
@@ -90,7 +94,8 @@ export async function updateEvent(id: number, eventData: Partial<Event>): Promis
       location = COALESCE(${eventData.location}, location),
       place = COALESCE(${eventData.place}, place),
       timezone = COALESCE(${eventData.timezone}, timezone),
-      link = COALESCE(${eventData.link}, link)
+      link = COALESCE(${eventData.link}, link),
+      media = COALESCE(${eventData.media ? JSON.stringify(eventData.media) : null}, media)
     WHERE id = ${id}
     RETURNING *
   `;

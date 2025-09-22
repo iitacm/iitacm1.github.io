@@ -17,7 +17,8 @@ export async function GET() {
         location,
         place,
         timezone,
-        link
+        link,
+        media
       FROM events
       ORDER BY start_time ASC
     `;
@@ -68,7 +69,8 @@ export async function POST(request: Request) {
         location, 
         place, 
         timezone, 
-        link
+        link,
+        media
       ) VALUES (
         ${eventData.name},
         ${eventData.description || ''},
@@ -77,7 +79,8 @@ export async function POST(request: Request) {
         ${eventData.location || ''},
         ${eventData.place || ''},
         ${eventData.timezone},
-        ${eventData.link}
+        ${eventData.link},
+        ${JSON.stringify(eventData.media)}
       )
       RETURNING *
     `;
