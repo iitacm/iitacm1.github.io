@@ -1,5 +1,11 @@
 # ACM Illinois Tech Website Repository
 
+This is the official website for the Association for Computing Machinery (ACM) chapter at Illinois Institute of Technology. Built with Next.js, TypeScript, and Tailwind CSS.
+
+## 📖 Source Code Overview
+
+For detailed information about the codebase architecture, components, tech stack, and contribution guidelines, please see our comprehensive [Source Code Overview](./SOURCE_CODE_OVERVIEW.md).
+
 ## Getting Started
 
 Follow these instructions to clone the repository locally and run the server.
