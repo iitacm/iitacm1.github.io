@@ -30,6 +30,16 @@
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/api/events/route.js"
+    ],
+    "/add-events/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/add-events/page.js"
+    ],
+    "/api/upload/route": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/api/upload/route.js"
     ]
   }
 }
