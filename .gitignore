@@ -23,6 +23,7 @@ package-lock.json
 /out/
 .next/
 .next/trace
+.next
 
 # Production builds
 /build
