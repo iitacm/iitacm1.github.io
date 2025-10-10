@@ -46,6 +46,19 @@ export async function GET() {
 export async function POST(request: Request) {
   try {
     const sql = neon(process.env.ACM_IIT_POSTGRES_DATABASE_URL!);
+    
+    // Check content length before parsing JSON
+    const contentLength = request.headers.get('content-length');
+    if (contentLength && parseInt(contentLength) > 4.5 * 1024 * 1024) { // 4.5MB limit
+      return NextResponse.json(
+        { 
+          success: false, 
+          error: 'Payload too large. Maximum size is 4.5MB.' 
+        },
+        { status: 413 }
+      );
+    }
+    
     const eventData: Omit<Event, 'id'> = await request.json();
     
     // Validate required fields

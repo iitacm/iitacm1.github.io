@@ -1,15 +1,53 @@
+'use client';
+
 import { EventForm } from '@/components/events/event-form';
 import { Header } from '@/components/ui/page-header';
+import { Button } from '@/components/ui/button';
+import { useState } from 'react';
+import { useRouter } from 'next/navigation';
 
 const Page = () => {
+  const [isLoggingOut, setIsLoggingOut] = useState(false);
+  const router = useRouter();
   const addEventImagePath = "/event.svg";
   const addEventHeaderText = `Create and share amazing events with our community. Upload photos and videos to showcase your event and provide all the details attendees need to know.`;
+
+  const handleLogout = async () => {
+    setIsLoggingOut(true);
+    try {
+      const response = await fetch('/api/auth/logout', {
+        method: 'POST',
+      });
+      
+      if (response.ok) {
+        router.push('/login');
+      } else {
+        console.error('Logout failed');
+      }
+    } catch (error) {
+      console.error('Logout error:', error);
+    } finally {
+      setIsLoggingOut(false);
+    }
+  };
 
   return (
     <>
       {/* Background decorative elements */}
       <div className="absolute top-[-100px] left-[-100px] w-80 h-80 bg-light-red rounded-full blur-[80px] opacity-30"></div>
       {/* <div className="absolute top-[600px] right-[-150px] w-80 h-80 bg-light-red rounded-full blur-[80px] opacity-30"></div> */}
+      
+      {/* Logout Button */}
+      <div className="fixed top-4 right-4 z-50">
+        <Button
+          onClick={handleLogout}
+          disabled={isLoggingOut}
+          variant="outline"
+          className="bg-white/90 backdrop-blur-sm border-red-200 text-red-600 hover:bg-red-50 hover:border-red-300"
+        >
+          {isLoggingOut ? 'Logging out...' : 'Logout'}
+        </Button>
+      </div>
       
       {/* Header */}
       <Header 

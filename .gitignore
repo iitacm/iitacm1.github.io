@@ -134,3 +134,6 @@ temp/
 /playwright-report/
 /playwright/.cache/
 .next/cache/webpack/client-development/index.pack.gz
+
+# Security - Admin password update scripts
+update-admin-password.mjs

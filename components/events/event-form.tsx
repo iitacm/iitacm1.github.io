@@ -165,6 +165,14 @@ export const EventForm: React.FC = () => {
         media: mediaUrls.length > 0 ? mediaUrls : null
       };
 
+      // Check payload size before submitting
+      const payloadSize = new Blob([JSON.stringify(eventData)]).size;
+      if (payloadSize > 4.5 * 1024 * 1024) { // 4.5MB limit
+        setErrors({ general: 'Event data is too large. Please reduce media content or description length.' });
+        setUploading(false);
+        return;
+      }
+
       // Submit to API
       const response = await fetch('/api/events', {
         method: 'POST',
@@ -227,6 +235,13 @@ export const EventForm: React.FC = () => {
   return (
     <Card className="p-8">
       <form onSubmit={handleSubmit} className="space-y-6">
+        {/* General Error Display */}
+        {errors.general && (
+          <div className="bg-red-50 border border-red-200 rounded-lg p-4">
+            <p className="text-red-600 text-sm">{errors.general}</p>
+          </div>
+        )}
+        
         {/* Event Name */}
         <div>
           <label htmlFor="name" className="block text-sm font-medium text-fontcolor mb-2">
@@ -407,7 +422,7 @@ export const EventForm: React.FC = () => {
               <p className="text-gray-600">
                 {formData.media.length >= 4 
                   ? 'Maximum 4 files reached' 
-                  : 'Click to upload images or videos (Max 10MB each)'
+                  : 'Click to upload images or videos (Max 4.5MB total)'
                 }
               </p>
             </label>
