@@ -49,12 +49,8 @@ export const metadata: Metadata = {
     images: ["../public/assets/acm_iit_logo.png"],
   },
   robots: {
-    index: false,
+    index: true,
     follow: true,
-    googleBot: {
-      index: true,
-      follow: false,
-    },
   },
 };
 
