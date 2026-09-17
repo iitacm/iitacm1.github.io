@@ -1,20 +1,16 @@
 import { MetadataRoute } from 'next'
 
-export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  // If you have dynamic routes (like blogs), fetch them here
+export default function sitemap(): MetadataRoute.Sitemap {
+  const baseUrl = 'https://acmillinoistech.org'
   
   return [
-    {
-      url: 'https://acmillinoistech.org',
-      lastModified: new Date(),
-      changeFrequency: 'yearly',
-      priority: 1,
-    },
-    {
-      url: 'https://acmillinoistech.org/about',
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 0.8,
-    },
+    { url: `${baseUrl}/`, lastModified: new Date() },
+    { url: `${baseUrl}/team`, lastModified: new Date() },
+    { url: `${baseUrl}/events`, lastModified: new Date() },
+    { url: `${baseUrl}/merch`, lastModified: new Date() },
+    { url: `${baseUrl}/contact`, lastModified: new Date() },
+    { url: `${baseUrl}/scarlethacks`, lastModified: new Date() },
+    { url: `${baseUrl}/sigs`, lastModified: new Date() },
+    { url: `${baseUrl}/get-involved`, lastModified: new Date() },
   ]
 }
