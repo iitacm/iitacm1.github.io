@@ -1,27 +1,27 @@
 [
     {
-        "name": "Jiya Sheetal Rathi",
+        "name": "Otioh Marie-Lynn Corianne Delon Konan",
         "position": "President",
         "more_info": "She is very nice.",
-        "picture": "/assets/acm_pictures/team/jiya.jpg",
-        "year": "2026",
-        "major": "B.S. Computer Science",
-        "minor": "Finance & Statistics",
+        "picture": "/assets/acm_pictures/team/otioh.jpeg",
+        "year": "2027",
+        "major": "B.S. Artifical Intelligence",
+        "minor": "Cyber Defense",
         "socials": {
-            "linkedin": "https://www.linkedin.com/in/jiyarathi"
+            "linkedin": "https://www.linkedin.com/in/otioh-konan"
         },
         "category": "Leadership Team"
     },
     {
-        "name": "Lorena Rodriguez",
+        "name": "Tashvi Mehta",
         "position": "Secretary",
-        "more_info": "Good listener.",
-        "picture": "/assets/acm_pictures/team/lorena.jpg",
-        "year": "2026",
+        "more_info": "A Community Engager...",
+        "picture": "/assets/acm_pictures/team/tashvi.jpg",
+        "year": "2028",
         "major": "B.S. Computer Science",
         "minor": "",
         "socials": {
-            "linkedin": "https://www.linkedin.com/in/lorenaramirez1"
+            "instagram": "https://www.instagram.com/tashviii"
         },
         "category": "Leadership Team"
     },
@@ -40,7 +40,7 @@
     },
     {
         "name": "Nick Naing",
-        "position": "External Events Coordinator",
+        "position": "Workshop Coordinator",
         "more_info": "Good teacher.",
         "picture": "/assets/acm_pictures/team/nick.png",
         "year": "2026",
@@ -93,46 +93,19 @@
         "category": "Operations Team"
     },
     {
-        "name": "Govind Kurapati",
-        "position": "Web Developer",
-        "more_info": "Very good coder.",
-        "picture": "/assets/acm_pictures/team/govind.png",
-        "year": "2026",
-        "major": "M.S. Computer Science",
-        "minor": "",
-        "socials": {
-            "linkedin": "https://www.linkedin.com/in/govind-kurapati",
-            "portfolio": "https://govind-kurapati.com"
-        },
-        "category": "Technical Team"
-    },
-    {
-        "name": "Ashraf Abdul-Muumin",
+        "name": "Yslam Ismailov",
         "position": "Web Developer",
         "more_info": "lol.",
-        "picture": "/assets/acm_pictures/team/ashraf.jpg",
-        "year": "2026",
-        "major": "M.S. Information Technology & Management",
+        "picture": "/assets/acm_pictures/team/yslam.jpeg",
+        "year": "2027",
+        "major": "B.S. Computer Science",
         "minor": "",
         "socials": {
-            "linkedin": "http://linkedin.com/in/chirix33",
-            "github": "https://www.github.com/chirix33",
-            "portfolio": "https://chirix.netlify.app"
+            "linkedin": "http://linkedin.com/in/YslamI",
+            "github": "https://www.github.com/YslamI",
+            "portfolio": "https://yslamismailov.vercel.app/"
         },
         "category": "Technical Team"
-    },
-    {
-        "name": "Tashvi Mehta",
-        "position": "Community Engagement Chair",
-        "more_info": "A Community Engager...",
-        "picture": "/assets/acm_pictures/team/tashvi.jpg",
-        "year": "2026",
-        "major": "M.S. Computer Science",
-        "minor": "",
-        "socials": {
-            "instagram": "https://www.instagram.com/tashviii"
-        },
-        "category": "Operations Team"
     },
     {
         "name": "Emma Diamon",
