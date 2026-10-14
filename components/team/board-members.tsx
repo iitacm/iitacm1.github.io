@@ -16,14 +16,14 @@ const BoardMembers = ()  => {
     const fetcher = (url: string) => fetch(url).then((res) => res.json());
     const { data, error, isLoading } = useSWR<BoardMember[]>("/api/board-members", fetcher);
     const boardMembers = data || [];
-    const categories: TeamCategory[] = ["Leadership Team", "Operations Team", "Technical Team"];
+    const categories: TeamCategory[] = ["Leadership Team", "Operations Team", "Technical Team", "GBM Team"];
     const [selectedMember, setSelectedMember] = useState<BoardMember | null>(null);
 
     const renderMembersByCategory = (category: string) => {
         return boardMembers
         .filter((member) => member.category === category)
-        .map((member) => (
-            <div key={member.name} className="mx-auto md:mx-0 min-h-80 w-3/4">
+        .map((member, index) => (
+            <div key={`${member.name}-${member.position}-${index}`} className="mx-auto md:mx-0 min-h-80 w-3/4">
                 <div className="md:h-3/4 w-full">
                     <Image src={member.picture} width={300} height={400} className="w-full h-full object-cover" alt="Team Member" />
                 </div>
