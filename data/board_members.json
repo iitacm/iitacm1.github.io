@@ -80,19 +80,6 @@
         "category": "Operations Team"
     },
     {
-        "name": "Krishna Ram Saravanakumar",
-        "position": "Operations Lead",
-        "more_info": "Good Designer.",
-        "picture": "/assets/acm_pictures/team/krishna_new.jpg",
-        "year": "2026",
-        "major": "M.S. Computer Science",
-        "minor": "",
-        "socials": {
-            "linkedin": "https://www.linkedin.com/in/krishnarams"
-        },
-        "category": "Operations Team"
-    },
-    {
         "name": "Yslam Ismailov",
         "position": "Web Developer",
         "more_info": "lol.",
@@ -117,45 +104,6 @@
         "minor": "",
         "socials": {
             "linkedin": "https://www.linkedin.com/in/emma-diamon"
-        },
-        "category": "Leadership Team"
-    },
-    {
-        "name": "Jovan Titus",
-        "position": "Graphic Designer",
-        "more_info": "A Graphic Designer",
-        "picture": "/assets/acm_pictures/team/jovan.png",
-        "year": "2026",
-        "major": "M.S. Computer Science",
-        "minor": "",
-        "socials": {
-            "linkedin": "https://www.linkedin.com/in/jjovantitus"
-        },
-        "category": "Technical Team"
-    },
-    {
-        "name": "Gayathri Ananya",
-        "position": "Professional Development Chair",
-        "more_info": "A Professional Developer",
-        "picture": "/assets/acm_pictures/team/ananya.jpeg",
-        "year": "2026",
-        "major": "M.A.S. Date Science",
-        "minor": "",
-        "socials": {
-            "linkedin": "https://www.linkedin.com/in/gayathri-ananya-175584174"
-        },
-        "category": "Operations Team"
-    },
-    {
-        "name": "Ryan Van",
-        "position": "Sponsorhip Chair",
-        "more_info": "The Sponsorship Chair of ACM IIT",
-        "picture": "/assets/acm_pictures/team/ryan.jpeg",
-        "year": "2026",
-        "major": "B.S. Computer Science",
-        "minor": "Statistics",
-        "socials": {
-            "linkedin": "https://www.linkedin.com/in/ryanvan03"
         },
         "category": "Leadership Team"
     }
