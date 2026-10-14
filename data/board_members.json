@@ -41,6 +41,19 @@
         "category": "Leadership Team"
     },
     {
+        "name": "Sairavi Ganesh",
+        "position": "Treasurer",
+        "more_info": "So patient and kind!",
+        "picture": "/assets/acm_pictures/team/sai.png",
+        "year": "2027",
+        "major": "M.S. Computer Science",
+        "minor": "",
+        "socials": {
+            "linkedin": "https://www.linkedin.com/in/sairaviganesh/"
+        },
+        "category": "Leadership Team"
+    },
+    {
         "name": "Delwin Manjali",
         "position": "Vice Treasurer",
         "more_info": "Care about the campus and the community.",
@@ -109,19 +122,6 @@
             "portfolio": "https://yslamismailov.vercel.app/"
         },
         "category": "Technical Team"
-    },
-    {
-        "name": "Sairavi Ganesh",
-        "position": "Treasurer",
-        "more_info": "So patient and kind!",
-        "picture": "/assets/acm_pictures/team/sai.png",
-        "year": "2027",
-        "major": "M.S. Computer Science",
-        "minor": "",
-        "socials": {
-            "linkedin": "https://www.linkedin.com/in/sairaviganesh/"
-        },
-        "category": "Leadership Team"
     },
     {
         "name": "Numa Fatima",

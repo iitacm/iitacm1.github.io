@@ -22,8 +22,8 @@ const BoardMembers = ()  => {
     const renderMembersByCategory = (category: string) => {
         return boardMembers
         .filter((member) => member.category === category)
-        .map((member, index) => (
-            <div key={`${member.name}-${member.position}-${index}`} className="mx-auto md:mx-0 min-h-80 w-3/4">
+        .map((member) => (
+            <div key={member.name} className="mx-auto md:mx-0 min-h-80 w-3/4">
                 <div className="md:h-3/4 w-full">
                     <Image src={member.picture} width={300} height={400} className="w-full h-full object-cover" alt="Team Member" />
                 </div>
