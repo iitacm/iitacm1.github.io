@@ -83,16 +83,16 @@
         "category": "Operations Team"
     },
     {
-        "name": "Edwin Huallpa",
+        "name": "Mithila Vemuganti",
         "position": "Events Coordinator",
-        "more_info": "He is very good at coding.",
-        "picture": "/assets/acm_pictures/team/edwin.jpg",
-        "year": "2027",
-        "major": "B.S. Computer Science",
-        "minor": "Cybersecurity & Business",
+        "more_info": "Good at events.",
+        "picture": "/assets/acm_pictures/team/mithila.jpg",
+        "year": "2028",
+        "major": "B.S. Data Science",
+        "minor": "",
         "socials": {
-            "linkedin": "https://www.linkedin.com/in/edwin-huallpa-346868281",
-            "instagram": "https://www.instagram.com/hl7joao"
+            "linkedin": "https://www.linkedin.com/in/mithilavemuganti",
+            "instagram": "https://www.instagram.com/mideve_04"
         },
         "category": "Operations Team"
     },
