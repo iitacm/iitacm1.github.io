@@ -16,7 +16,7 @@ const BoardMembers = ()  => {
     const fetcher = (url: string) => fetch(url).then((res) => res.json());
     const { data, error, isLoading } = useSWR<BoardMember[]>("/api/board-members", fetcher);
     const boardMembers = data || [];
-    const categories: TeamCategory[] = ["Leadership Team", "Operations Team", "Technical Team"];
+    const categories: TeamCategory[] = ["Leadership Team", "Operations Team", "Technical Team", "General Board Members"];
     const [selectedMember, setSelectedMember] = useState<BoardMember | null>(null);
 
     const renderMembersByCategory = (category: string) => {

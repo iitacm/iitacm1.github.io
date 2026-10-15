@@ -122,5 +122,18 @@
             "portfolio": "https://yslamismailov.vercel.app/"
         },
         "category": "Technical Team"
+    },
+    {
+        "name": "Numa Fatima",
+        "position": "General Board Member",
+        "more_info": "very cool",
+        "picture": "/assets/acm_pictures/team/numa.jpg",
+        "year": "2028",
+        "major": "B.S. Computer Science",
+        "minor": "",
+        "socials": {
+            "linkedin": "http://linkedin.com/in/numafatima"
+        },
+        "category": "General Board Members"
     }
 ]
