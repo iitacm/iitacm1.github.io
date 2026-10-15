@@ -35,7 +35,7 @@ interface SocialLinks {
     github?: string;
 }
 
-export type TeamCategory = "Leadership Team" | "Operations Team" | "Technical Team";
+export type TeamCategory = "Leadership Team" | "Operations Team" | "Technical Team" | "GBM Team";
 
 export interface BoardMember {
     name: string;

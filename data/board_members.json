@@ -122,31 +122,31 @@
             "portfolio": "https://yslamismailov.vercel.app/"
         },
         "category": "Technical Team"
-    },
-    {
-        "name": "Numa Fatima",
-        "position": "General Board Member",
-        "more_info": "very cool",
-        "picture": "/assets/acm_pictures/team/numa.jpg",
-        "year": "2028",
-        "major": "B.S. Computer Science",
-        "minor": "",
-        "socials": {
-            "linkedin": "https://www.linkedin.com/in/numafatima"
-        },
-        "category": "GBM Team"
-    },
-    {
-        "name": "Maksim Stupakov",
-        "position": "General Board Member",
-        "more_info": "water is my second nature",
-        "picture": "/assets/acm_pictures/team/maksim.jpg",
-        "year": "2029",
-        "major": "B.S. Computer Science and Finance",
-        "minor": "",
-        "socials": {
-            "linkedin": "https://www.linkedin.com/in/maksim-stupakov-575461396?"
-        },
-        "category": "GBM Team"
     }
+    // {
+    //     "name": "Numa Fatima",
+    //     "position": "General Board Member",
+    //     "more_info": "very cool",
+    //     "picture": "/assets/acm_pictures/team/numa.jpg",
+    //     "year": "2028",
+    //     "major": "B.S. Computer Science",
+    //     "minor": "",
+    //     "socials": {
+    //         "linkedin": "https://www.linkedin.com/in/numafatima"
+    //     },
+    //     "category": "GBM Team"
+    // },
+    // {
+    //     "name": "Maksim Stupakov",
+    //     "position": "General Board Member",
+    //     "more_info": "water is my second nature",
+    //     "picture": "/assets/acm_pictures/team/maksim.jpg",
+    //     "year": "2029",
+    //     "major": "B.S. Computer Science and Finance",
+    //     "minor": "",
+    //     "socials": {
+    //         "linkedin": "https://www.linkedin.com/in/maksim-stupakov-575461396?"
+    //     },
+    //     "category": "GBM Team"
+    // }
 ]
