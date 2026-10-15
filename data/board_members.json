@@ -63,6 +63,7 @@
         "minor": "Public Policy",
         "socials": {
             "linkedin": "https://www.linkedin.com/in/delwin-manjali/",
+            "instagram": "https://www.instagram.com/delwinthejolly12/",
             "portfolio": "https://delwinmanjaliportfolio.base44.app/"
         },
         "category": "Leadership Team"
@@ -96,15 +97,15 @@
         "category": "Operations Team"
     },
     {
-        "name": "Vijay Kumar Reddy Ponugoti",
+        "name": "Mara Theodorescu",
         "position": "Creative Director",
         "more_info": "Good Designer.",
-        "picture": "/assets/acm_pictures/team/vijay.jpg",
-        "year": "2025",
-        "major": "M.A.S. Computer Science",
+        "picture": "/assets/acm_pictures/team/mara.jpg",
+        "year": "2028",
+        "major": "B.S. Artificial Intelligence",
         "minor": "",
         "socials": {
-            "linkedin": "http://linkedin.com/in/vijay-ponugoti"
+            "linkedin": "http://linkedin.com/in/mara-theodorescu-8015a3311"
         },
         "category": "Operations Team"
     },
@@ -133,6 +134,19 @@
         "minor": "",
         "socials": {
             "linkedin": "http://linkedin.com/in/numafatima"
+        },
+        "category": "General Board Members"
+    },
+    {
+        "name": "Maksim Stupakov",
+        "position": "General Board Member",
+        "more_info": "water is my second nature",
+        "picture": "/assets/acm_pictures/team/maksim.jpg",
+        "year": "2029",
+        "major": "B.S. Computer Science",
+        "minor": "",
+        "socials": {
+            "linkedin": "https://www.linkedin.com/in/maksim-stupakov-575461396/"
         },
         "category": "General Board Members"
     }
