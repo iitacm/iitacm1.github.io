@@ -110,6 +110,19 @@
         "category": "Operations Team"
     },
     {
+        "name": "Muhammad Rehan",
+        "position": "Membership Chair",
+        "more_info": "Responsible.",
+        "picture": "/assets/acm_pictures/team/rehan.jpg",
+        "year": "2027",
+        "major": "M.A.S. Data Science",
+        "minor": "",
+        "socials": {
+            "linkedin": "https://www.linkedin.com/in/mjanjua1/"
+        },
+        "category": "Operations Team"
+    },
+    {
         "name": "Yslam Ismailov",
         "position": "Web Developer",
         "more_info": "lol.",
